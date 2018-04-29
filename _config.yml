@@ -3,9 +3,8 @@
 #
 
 # title of your site (displayed in the header)
-# name --> title: Hello, I'm Onito™ 👋
 # changes 4 site.name to site.title
-title: The Desert Cat Worrior 🐱
+title: The Desert Cat Warrior
 
 # Short bio or description (displayed in the header)
 description: Nothing but today, Anything but yesterday
@@ -16,12 +15,12 @@ author:
   twitter: onito
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/system/Felix.png
+avatar: /static/system/avatar1.png
 
-# favicon at {{ site.baseurl }}/images/system/{{ site.favicon1 }}
-favicon1: Felix.png
-favicon2: emoji_duck.png
-favicon3: jekyll-logo.png
+# favicon at {{ site.baseurl }}/static/system/{{ site.favicon1 }}
+favicon1: avatar1.png
+favicon2: avatar2.png
+favicon3: avatar3.png
 
 #
 # Flags below are optional
@@ -66,6 +65,7 @@ url: https://onitonitonito.github.io
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+index2: index_jekyll
 
 #
 # !! You don't need to change any of the configuration flags below !!

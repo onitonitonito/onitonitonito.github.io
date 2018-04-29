@@ -3,7 +3,7 @@ layout: page
 title: ABOUT
 permalink: /about/
 ---
-<img src="/images/system/sparx_real.png" align="right" width="200"
+<img src="/static/system/sparx_real.png" align="right" width="200"
  alt="MEOW!..." />
 
 
@@ -27,5 +27,5 @@ permalink: /about/
 {% include contacts.html %}
 
 # 👑 Visit My Blog (test)
-> [![__octocat__]({{ site.baseurl }}/images/system/logo_github.png "https://onitonitonito.github.io")](https://onitonitonito.github.io)   
+> [![__octocat__]({{ site.baseurl }}/static/system/logo_github.png "https://onitonitonito.github.io")](https://onitonitonito.github.io)   
 > [[**onitonitonito.github.io**]](https://onitonitonito.github.io)

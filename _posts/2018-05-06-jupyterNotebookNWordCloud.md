@@ -21,7 +21,7 @@ comments : true
 
 HTML과 가장 큰 차이점은 표준화가 안되있다는 점이 가장 큰 불편한 점입니다. HTML은 표준화그룹을 가지고, 꾸준히 가다듬어 온 반면, 마크다운은 거의 황야에 방치해 놓은 수준으로, 여기저기 다른 표준이 생겨났습니다.
 
-![__pic00__]({{ site.baseurl }}/images/post_img/2018-05-28_0_github.png)
+![__pic00__]({{ site.baseurl }}/static/system/logo_github.png)
 
 > 마크다운의 가장 큰 백그라운드의 하나는 '깃허브'입니다. 그래서 가장 큰 표준 중에 하나가 바로 깃허브 표준 입니다. 하지만, 많이 불편합니다.
 
@@ -30,8 +30,8 @@ HTML과 가장 큰 차이점은 표준화가 안되있다는 점이 가장 큰 �
 - word ✨ cloud modue with matplotlib, numpy image processing ✨
 - Classified word by frequency of appearance
 
-![__pic01__]({{ site.baseurl }}/images/post_img/2018-05-28-5_0.png)
-![__pic02__]({{ site.baseurl }}/images/post_img/2018-05-28-5_1.png)
+![__pic01__]({{ site.baseurl }}/static/post_img/20180506-5_0.png)
+![__pic02__]({{ site.baseurl }}/static/post_img/20180506-5_1.png)
 
 
 ```python
@@ -82,7 +82,7 @@ plt.axis('off')
 plt.show()
 ```
 
-![png]({{ site.baseurl }}/images/post_img/2018-05-28-3_0.png)
+![png]({{ site.baseurl }}/static/post_img/20180506-3_0.png)
 
 ## 2. Masked Image Cloud
 
@@ -136,9 +136,9 @@ plt.axis("off")
 plt.show()
 ```
 
-![png]({{ site.baseurl }}/images/post_img/2018-05-28-5_0.png)
+![png]({{ site.baseurl }}/static/post_img/20180506-5_0.png)
 
-![png]({{ site.baseurl }}/images/post_img/2018-05-28-5_1.png)
+![png]({{ site.baseurl }}/static/post_img/20180506-5_1.png)
 
 ## 3. Show Image Cloud Once Again Alone...
 > - Repeatedly running the code
@@ -150,8 +150,8 @@ plt.axis('off')
 plt.show()
 ```
 
-![png]({{ site.baseurl }}/images/post_img/2018-05-28-7_0.png)
+![png]({{ site.baseurl }}/static/post_img/20180506-7_0.png)
 
-![__루비온레일즈__]({{ site.baseurl }}/images/system/ruby_on_rails.jpg)
+![__루비온레일즈__]({{ site.baseurl }}/static/system/logo_ruby_rails.jpg)
 
 ### [[DOC] Original Refered from : http://pinkwink.kr/1029](http://pinkwink.kr/1029)
