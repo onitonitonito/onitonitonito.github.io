@@ -280,10 +280,17 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+    // footer를 절대 위치값으로 사용하기 힘들다.
+    // position: absolute;
+    // bottom: 0px;
+    // left: 0px;
+    // right: 0px;
+
+    margin-top: 50px;
+    border-width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: $lightGray;
 }
 
 footer {

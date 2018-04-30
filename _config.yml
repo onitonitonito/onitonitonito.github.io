@@ -18,9 +18,9 @@ author:
 avatar: /static/system/avatar1.png
 
 # favicon at {{ site.baseurl }}/static/system/{{ site.favicon1 }}
-favicon1: avatar1.png
-favicon2: avatar2.png
-favicon3: avatar3.png
+favicon1: avatar1.png   # desert cat
+favicon2: avatar2.png   # emoji duck
+favicon3: avatar3.png   # angry TIG
 
 #
 # Flags below are optional
@@ -28,15 +28,15 @@ favicon3: avatar3.png
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  dribbble: nitt0x0
   email: nitt0x0@gmail.com
-  facebook:
-  flickr:
+  facebook: nitt0x0
+  flickr: nitt0x0
   github: onitonitonito/onitonitonito.github.io.git
-  instagram:
-  linkedin:
-  pinterest:
-  twitter:
+  instagram: nitt0x0
+  linkedin: nitt0x0
+  pinterest: nitt0x0
+  twitter: nitt0x0
   rss: # just type anything here for a working RSS icon
 
   # your stackoverflow profile, e.g. "users/50476/bart-kiers"
@@ -65,6 +65,7 @@ url: https://onitonitonito.github.io
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+index1: index
 index2: index_jekyll
 
 #

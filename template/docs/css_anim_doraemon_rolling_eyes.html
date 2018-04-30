@@ -1,0 +1,165 @@
+---
+layout: blank
+---
+<style>
+  body {
+    margin: 0;
+  }
+
+  .content {
+    position: absolute;
+    top: 370px;
+    left: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0083e8;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+  }
+
+  .DORAEMON {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: url('{{ site.baseurl }}/static/imgs/doraemon.gif') no-repeat 50% 50%;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+  }
+
+  /*  About Eyeballs (each, left, right)
+      Eyeballs, Eyeball,
+      Eyeball-left / Eyeball-right
+  */
+  .eyeballs {
+    display: flex;
+    position: absolute;
+    top: 17px;
+    left: 84px;
+  }
+
+  .eyeball {
+    position: relative;
+    width: 57px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    transform: scaleX(0.98);
+  }
+
+  .eyeball-left {
+    left: 4px;
+  }
+
+  .eyeball-right {
+    left: 2px;
+  }
+
+/*  About pupil of eyes rolling
+    pupil = Pupil, Pupil-Before & After
+*/
+  .pupil {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 20px;
+    height: inherit;
+  }
+
+  .pupil:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  .pupil:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 11px;
+    bottom: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+  }
+</style>
+
+<div class="DORAEMON">
+  <div class="eyeballs">
+    <div class="eyeball eyeball-left">
+      <div class="pupil"></div>
+    </div>
+    <div class="eyeball eyeball-right">
+      <div class="pupil"></div>
+    </div>
+  </div>
+  <div class='content'>
+    <li><b>원본 소스보기</b> :
+      <a href='http://www.studiomeal.com/code/doraemon/' target='NEW'>[Studio Meal]
+      </a></li>
+  </div>
+</div>
+
+<!-- css position 으로 위치를 정해서, footer을 아래로 (15칸)밀어내야 함 -->
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<script>
+  var 눈알 = function(selector) {
+    var 눈 = document.querySelector(selector),
+      눈동자 = 눈.querySelector('.pupil'),
+      눈영역 = 눈.getBoundingClientRect();
+
+    var 눈알굴리기 = function(mouseX, mouseY) {
+      var 라디안 = Math.atan2(mouseY - (눈영역.y + 눈영역.height * 0.5), mouseX - (눈영역.x + 눈영역.width * 0.5));
+      눈동자.style.transform = 'rotate(' + (180 * 라디안 / Math.PI - 90) + 'deg)';
+    };
+
+    return {
+      눈알굴리기: 눈알굴리기
+    };
+  };
+
+  var 왼눈 = 눈알('.eyeball-left');
+  var 오른눈 = 눈알('.eyeball-right');
+
+  window.addEventListener('mousemove', function(e) {
+    왼눈.눈알굴리기(e.pageX, e.pageY);
+    오른눈.눈알굴리기(e.pageX, e.pageY);
+  });
+</script>
+
+
+<!--//
+  refer : https//www.studiomeal.com/doraemon
+  Youtube : https://www.youtube.com/watch?v=55esdUIdYw0&feature=youtu.be
+
+안녕하세요~🐥
+마우스 위치에 따라 귀엽게 눈알을 굴리는(마우스 좌표에 따라 각을 계산하고 회전시키는 방법을 배울 수 있는) 도라에몽 만들기 영상입니다.
+
+지난번에 예고편(?) 올렸던 도라에몽입니다.
+마우스 위치에 따라 눈을 휙휙 돌리는 귀여운 도라에몽을 만들어 BoA요!
+(빈곤한 유튜브 채널도 구독해줘 하영 고맙수다!)
+
+
+1분코딩 확장팩 / 게시일: 2017. 11. 27. / 구독 181
+---------
+예제 소스 http://www.studiomeal.com/code/doraemon
+좌표를 이용해 각을 계산하는 방법과 일반 함수를 객체의 메서드로 활용하는 간단한 방법을 배워봅시다.
+
+페이스북 1분코딩 https://www.facebook.com/1mincoding
+스튜디오밀 http://www.studiomeal.com
+//-->
