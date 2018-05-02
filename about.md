@@ -3,11 +3,11 @@ layout: page
 title: ABOUT
 permalink: /about/
 ---
-<img src="/static/system/sparx_real.png" align="right" width="200"
- alt="MEOW!..." />
 
+# 🐝 Kay SuparX the Hornet
 
-# 🐝 Kay SuparX the Hornet 
+<img src="/static/system/sparx_real.png" align="right" width="150"
+alt="MEOW!..." />
 
 > - Just common 'Dirty Bomb' player who plays in 30 fps   
 > - I usually Main Sparks, but also plays Aimee and Arty too.   

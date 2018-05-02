@@ -75,7 +75,7 @@ layout: blank
       <td colspan='3'>
         <div align='center' class="small">
           Powered by:&nbsp;
-          <a href="http://www.pythonanywhere.com">
+          <a href="http://onitobot.pythonanywhere.com" target="_blank">
             <img src="{{ site.baseurl }}/static/imgs/PAW_logo-234x35.png" /></a>
         </div>
       </td>
