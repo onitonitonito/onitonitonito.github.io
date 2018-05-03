@@ -13,73 +13,44 @@ layout: blank
 .small  {
     font-size: 0.8em;
   }
+
+.quote-head  {
+  margin-top: 15px;
+  font-family: $helveticaNeue;
+  font-size: 24px;
+  color: $darkerGray;
+  font-weight: bold;
+}  
+
+.quote-body  {
+  margin-top: 0px;
+  font-family: $helveticaNeue;
+  font-size: 12px;
+  color: $lightGray;
+}  
+
 </style>
 
-<table border='0' cellspacing='0' class="container">
-  <tbody>
-    <tr>
-      <td align="center" class="norm">
-        <br>
-        <a href="https://github.com/onitonitonito"><img src="{{ site.baseurl }}/static/imgs/Github_page.png" width="130" /></a>
-      </td>
 
-      <td width="350" class="norm">
-        <div align='left' class="read-more">
-          <ul>
-<li>Get your Brains rolling!!!~!</li>
-<li>Python & Django Web-framework</li>
-<li>Pygame & Other Applications in PyPI</li>
-<li>Get Unins Design! Refer [<a href="{{ site.baseurl }}/template/docs/uninsDesign">HERE</a>]</li>
-<li>Your helpful <u>CKEditor</u> is.. [<a href="{{ site.baseurl }}/template/ckeditor/ckeditor/index.html">HERE</a>]</li>
-<li>Powered by : PAW is..[<a href="http://onitobot.pythonanywhere.com">HERE</a>]</li>
-<li> Test:
-    [<a href="{{ site.baseurl }}/template/docs/tempo.html">1</a>]
-    [<a href="{{ site.baseurl }}/template/docs/indexTutor">2</a>]
-    [<a href="{{ site.baseurl }}/template/docs/newPage_01">3</a>] &nbsp;
-    [<a href="{{ site.baseurl }}/template/docs/css_anim_doraemon_rolling_eyes/">4</a>]
-    [<a href="{{ site.baseurl }}/template/docs/css_anim_doraemon_rolling_eyes2">5</a>]
-    [<a href="{{ site.baseurl }}/template/docs/css_anim_mosung_nolook_pass/">6</a>]
-    [<a href="#">-</a>]
-            </li>
-          </ul>
-        </div>
-      </td>
+<!-- from here the content : The Quotes -->
+<br><br><br><br>
+  <div align="center">
+    <H1 class="big">Spark Family!</H1>
+    <img src="{{site.baseurl}}/images/system/spark_family.png" width="450">
+    <div class="quote-head">The laziness!</div>
+    <div class="quote-body">..is the most beautiful thing in the world..</div>
+  </div>
+<br><br><br><br><br><br><br><br><br><br>
 
-      <td align="center" class="norm">
-        <br>
-        <img src="{{ site.baseurl }}/static/imgs/octocat704x605.jpg" width="150" />
-      </td>
-    </tr>
 
-    <tr>
-      <td colspan="3">
 
-        <div align="center" class="small">
-          <img src="{{ site.baseurl }}/static/imgs/SD-idle.gif" width="400">
-          <br>disigned by:
-          <a href="https://github.com/unins">unins</a>
-        </div>
+<!-- Markdown help (table) -->
+<h1 class="big"> 1.Mark-down help </h1>
 
-        <br><br>
+<ul>
+  <li> This is Markdown help for slack </li>
+  <li> It may slightly different with Kramdown Markdown </li>
+  <li> But similar </li>
+</ul>
 
-        <div align="center" class="big">
-          <a href="https://github.com/onitonitonito">
-            <b>https://github.com/onitonitonito</b>
-          </a>
-        </div>
-
-      </td>
-    </tr>
-
-    <tr>
-      <td colspan='3'>
-        <div align='center' class="small">
-          Powered by:&nbsp;
-          <a href="http://onitobot.pythonanywhere.com" target="_blank">
-            <img src="{{ site.baseurl }}/static/imgs/PAW_logo-234x35.png" /></a>
-        </div>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
+<img src="{{site.baseurl}}/images/system/markdown_help.png" width="">

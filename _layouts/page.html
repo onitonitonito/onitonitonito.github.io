@@ -9,4 +9,9 @@ layout: default
   <div class="post-list">
     {{ content }}
   </div>
+
+  {% if page.comments %}
+      {% include disqus.html %}
+  {% endif %}
+
 </article>

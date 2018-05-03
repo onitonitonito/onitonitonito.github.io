@@ -3,11 +3,8 @@
   <head>
 {% seo %}
 {% include meta.html %}
-    <!-- if less than IE9 -->
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
     <!-- favicon -->
-    <link rel="icon" href="{{ site.baseurl }}/static/system/{{ site.favicon1 }}">
+    <link rel="icon" href="{{ site.baseurl }}/images/system/{{ site.favicon1 }}">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
@@ -24,14 +21,21 @@
         <h1 class="site-name"><a href="{{ site.baseurl }}/{{ site.index1 }}">{{ site.title }}</a></h1>
         <p class="site-description">{{ site.description }}</p>
       </div>
+
+        {% include nav_bar.html %}
+
     </header>
   </div>
+
+
 
 
     <!-- 양삭.html을 레이아웃으로 내용을 별도로 작성할 수 있음 -->
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
+
+
 
     <div class="wrapper-footer">
       <div class="container">
