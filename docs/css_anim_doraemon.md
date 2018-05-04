@@ -88,6 +88,14 @@ comments: True
     border-radius: 50%;
     background-color: white;
   }
+
+  .pre-small  {
+    font-size: 0.8em;
+    padding: 0px 0px 0px 50px;
+    color: $gray;
+    background-color: $lightGray;
+  }
+
 </style>
 
 <div class="DORAEMON">
@@ -115,10 +123,6 @@ comments: True
 [[1]](/docs/css_anim_doraemon)
 [[2]](/docs/css_anim_mcmoosung)
 
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
 
 <script>
   var 눈알 = function(selector) {
@@ -145,16 +149,24 @@ comments: True
   });
 </script>
 
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+# 스크립트 테그
+
 <pre class="pre-small">
-  <!--
-  <script>
+  〈script〉
     var 눈알 = function(selector) {
       var 눈 = document.querySelector(selector),
         눈동자 = 눈.querySelector('.pupil'),
         눈영역 = 눈.getBoundingClientRect();
 
       var 눈알굴리기 = function(mouseX, mouseY) {
-        var 라디안 = Math.atan2(mouseY - (눈영역.y + 눈영역.height * 0.5), mouseX - (눈영역.x + 눈영역.width * 0.5));
+        var 라디안 = Math.atan2(
+          mouseY - (눈영역.y + 눈영역.height * 0.5),
+          mouseX - (눈영역.x + 눈영역.width * 0.5));
         눈동자.style.transform = 'rotate(' + (180 * 라디안 / Math.PI - 90) + 'deg)';
       };
 
@@ -170,6 +182,5 @@ comments: True
       왼눈.눈알굴리기(e.pageX, e.pageY);
       오른눈.눈알굴리기(e.pageX, e.pageY);
     });
-  </script>
-  -->
+  〈/script〉
 </pre>

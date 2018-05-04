@@ -69,8 +69,17 @@ HTML 과 MD 을 혼용하여 글을 작성 할 수 있습니다.
 
 
 
+
 <br><br>
-# 3.0 MD를 사용하면 Resize 불가능!
+# 3.0 성벽방어전 (Castle Defence)
+
+> <img src="{{site.baseurl}}/images/post_img/20180730-10.png" width="400" alt="성벽방어전">
+
+
+
+
+<br><br>
+# 4.0 MD를 사용하면 Resize 불가능!
 > ![인트로]({{site.baseurl}}/images/post_img/20180730-02-intro.png)
 > ![레벨1]({{site.baseurl}}/images/post_img/20180730-03.png)
 > ![레벨2]({{site.baseurl}}/images/post_img/20180730-04.png)

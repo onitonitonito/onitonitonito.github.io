@@ -25,8 +25,10 @@ comments: True
   }
 
   .pre-small  {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 0px 0px 0px 50px;
+    color: $gray;
+    background-color: $lightGray;
   }
 </style>
 
@@ -50,20 +52,15 @@ comments: True
 
 <br><br><br>
 
-<h1 class="big">The Performance of MC.Moosung</h1>
-<ul class="read-more">
-  <li>Moosung performed no-look pass</li>
-  <li>at the Incheon Int'l Airport immigration office</li>
-  <li>passing his luggage bag to secretary mindlessly.</li>
-  <li>Here's [<u><a href="https://www.youtube.com/watch?v=fDY3PmApP1o"target="_blank"> Moosung </u></a>] in various parody version, @Youtube.</li>
-</ul>
+# The Performance of MC.Moosung
+> 1. Moosung performed no-look pass
+> * at the Incheon Int'l Airport immigration office
+> * passing his luggage bag to secretary mindlessly.
+> * Here's [[Moosung]](https://www.youtube.com/watch?v=fDY3PmApP1o) in various parody version, @Youtube.
 
 <br>
-<h1 class="big">The References🍞 :</h1>
-
-<ul>
-  <li>css code & image source</li>
-</ul>
+# The References🍞 :
+> * css code & image source
 
 <pre class="pre-small">
   @keyframes no-look {
