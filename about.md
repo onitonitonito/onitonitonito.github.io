@@ -6,7 +6,7 @@ permalink: /about/
 <img src="{{ site.baseurl}}/images/system/spark_rabbit.png" align="right" width="200" alt="MEOW!..." />
 
 
-# 🐈 HELLO! I'm OnitOnitOnito
+# 🐈 HELLO! I'm Kay, Aka OnitOnitOnito
 
 > - Just common 'Dirty Bomb' player who plays in 30 fps   
 > - I usually Main Sparks, but also plays Aimee and Arty too.   
