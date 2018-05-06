@@ -1,7 +1,7 @@
 ---
 layout: post
 title: United07 스크래치 REMIX-Invert Platformer 🎴
-comments : true
+comments: true
 tag: scratch, game
 ---
 <img src="https://goo.gl/iHX8oE" align="right">

@@ -1,3 +1,4 @@
+<!-- 블랭크는 디폴트와 같은 개념, 단독으로 쓰임 디스커스 첨부 -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,10 +31,17 @@
 
 
 
-    <!-- 양삭.html을 레이아웃으로 내용을 별도로 작성할 수 있음 -->
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+  <!-- 양삭.html을 레이아웃으로 내용을 별도로 작성할 수 있음 -->
+  <div id="main" role="main" class="container">
+    {{ content }}
+
+
+  <br><br><br><br><br><br><br><br><br>  
+    {% if page.comments %}
+    {% include disqus.html %}
+    {% endif %}
+
+  </div>
 
 
 
@@ -44,10 +52,6 @@
         </footer>
       </div>
     </div>
-
-{% if page.comments %}
-    {% include disqus.html %}
-{% endif %}
 
     {% include analytics.html %}
 
