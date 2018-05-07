@@ -2,7 +2,8 @@
 layout: post
 title: United07 스크래치 REMIX-Invert Platformer 🎴
 comments: true
-tag: scratch, game
+category: scratch
+tag: game
 ---
 <img src="https://goo.gl/iHX8oE" align="right">
 이것은 스크래치 리믹스 모음에 대한 간단한 요약글입니다.    

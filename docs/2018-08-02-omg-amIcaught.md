@@ -1,7 +1,8 @@
 ---
-layout: blank
+layout: post
 title: OMG! Am I caught?
 comments: true
+category: cartoon
 tag: fishing
 ---
 # Great Hand for Cartoons Lifetime
@@ -15,7 +16,7 @@ tag: fishing
 |:-------:|:-------:|:-------:|
 | **(1)** | **(2)** | **(3)** |
 
-|＊SIGH＊ .... oh! ＊crab＊　　|　I can't belive I'm caught by such a green...　|　　thm'it!.. thm'it!.. thm'it!.. thm'it!..  EEEEE...KKK!!!|
+|＊Sigh＊oh.. ＊crab＊　　|　I can't belive I'm caught by such a greenhorn...　|　　thm'it!.. thm'it!.. thm'it!.. thm'it!..  EEEEE...KKK!!!|
 
 
 

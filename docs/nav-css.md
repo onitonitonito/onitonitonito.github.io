@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /css/
 ---
 # CSS ANIM 테스트 목록
 

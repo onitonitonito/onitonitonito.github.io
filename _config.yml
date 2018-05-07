@@ -2,13 +2,10 @@
 # This file contains configuration flags to customize your site
 #
 
-# title of your site (displayed in the header)
-# name --> title: Hello, I'm Onito™ 👋
-# changes 4 site.name to site.title
 title: Onito™ in Wonderland
 
 # Short bio or description (displayed in the header)
-description: NBTABY .. Nothing but today, anything but yesterday.
+description: NBTABY .. Nothing but today, Anything but yesterday.
 
 # author information refering to: https://goo.gl/iQCi4q
 author:
@@ -94,6 +91,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
+  sass_dir: _sass
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins

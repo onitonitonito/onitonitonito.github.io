@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /blog/
 ---
 # 블로그 테스트의 목록
 

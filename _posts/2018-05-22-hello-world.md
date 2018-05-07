@@ -2,6 +2,7 @@
 layout: post
 title: 첫번째 포스팅 테스트 입니다🌿
 comment: false
+category: greeting
 tag: hello, world
 ---
 기성용, 휴가 마치고 뉴캐슬로 이번주 내 복귀..손흥민과 맞대결 가능성↑ 포스팅 작성테스트.. 김병학 기자 입력 2018.07.22. 19:36 수정 2018.07.22. 19:52 댓글 4개
