@@ -1,8 +1,19 @@
-- name: Eric Mill
-  github: konklone
+- name: Nassir Malik
+  github: nassir-malik
+  repo: IOT-Pi3-Alexa-Automation
 
-- name: Parker Moore
-  github: parkr
+- name: R Studio Github
+  github: rstudio
+  repo: RStartHere
 
-- name: Liu Fengyun
-  github: liufengyun
+- name: United07
+  github: FunXD
+  repo: Arduino_on_Github
+
+- name: Mintpepper Park
+  github: unins
+  repo: K-Mooc
+
+- name: 2nd Kay Park
+  github: onito
+  repo: hello_python

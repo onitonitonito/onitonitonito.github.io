@@ -1,15 +1,25 @@
 ---
 layout: default
-permalink: org-list
+permalink: /orgs/
 ---
-<ul>
+<ol>
+
 {% for org_hash in site.data.orgs %}
-{% assign org = org_hash[1] %}
-  <li>
-    <a href="https://github.com/{{ org.username }}">
-      {{ org.name }}
-    </a>
-    ({{ org.members | size }} members)
-  </li>
+  {% assign org = org_hash[1] %}
+    <li>
+      <a href="https://github.com/{{ org.username }}">{{ org.name }}</a>
+      ({{ org.members | size }} members)
+    </li>
+
+    <ul>
+    {% for member in org.members %}
+      <li>{{ member.name }} .... <a href="https://github.com/{{ member.github }}">
+      https://github.com/{{ member.github }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+
+  <br><br>
 {% endfor %}
-</ul>
+
+</ol>

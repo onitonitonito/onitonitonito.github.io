@@ -1,8 +1,21 @@
 username: jekyll
 name: Jekyll
+
 members:
   - name: Tom Preston-Werner
     github: mojombo
 
+  - name: John Doe
+    github: jdoe
+
   - name: Parker Moore
     github: parkr
+
+  - name: Mintpepper Park
+    github: unins
+
+  - name: United07
+    github: FunXD
+
+  - name: 2nd Kay Park
+    github: onito
