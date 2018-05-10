@@ -19,6 +19,9 @@ favicon1: spark_rabbit01.png
 favicon2: lazycat01.png
 favicon3: angry_tig.png
 
+collections:
+  - albums
+
 #
 # Flags below are optional
 #

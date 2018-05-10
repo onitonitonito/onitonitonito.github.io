@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (초안) United07 스크래치 REMIX-Invert Platformer 🎴
+title: United07 스크래치 REMIX-Invert Platformer 🎴
 comments: true
 category: scratch
 tag: game

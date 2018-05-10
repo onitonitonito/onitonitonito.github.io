@@ -1,7 +1,11 @@
 ---
-title: "Josquin - Missa De beata virgine and Missa Ave maris stella"
+music: "https://goo.gl/T2SUDk"
+img: "http://i16.servimg.com/u/f16/12/92/42/38/6port134.jpg"
+
+title: "Josquin : Missa De beata virgine & Missa Ave maris stella"
 artist: "The Tallis Scholars"
 director: "Peter Phillips"
+
 works:
   - title: "Missa De beata virgine"
     composer: "Josquin des Prez"
