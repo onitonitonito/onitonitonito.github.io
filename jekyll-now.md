@@ -1,11 +1,29 @@
 ---
-layout: page
-title: README
+layout: default
 permalink: /jekyll-now/
-comments : true
+comments: true
 ---
-<img src="{{site.baseurl}}/images/system/404.jpg" width="170" align="left">
+# 지킬(Jekyll) GitHub Documentation❄️
+
+<a href="https://jekyllrb-ko.github.io" target="new">
+  <img src="https://jekyllrb-ko.github.io/img/logo-2x.png" width="230" align="left" alt="지킬 한글번역" style="padding:0px 30px 0px 10px">
+</a>
+
+> * **지킬 문서** (한국어번역)는
+[[https://jekyllrb-ko.github.io]](https://jekyllrb-ko.github.io)을 참조!
+> * **Jekyll** GitHub Repository 는
+[[https://github.com/jekyll/jekyll]](https://github.com/jekyll/jekyll)을 참조!
+> <br><br>
+> * 이 곳은 **Barry Clark** 의 깃허브 지킬나우(Jekyll-now)를 Base로 변형 하였습니다.
+> * Ruby의 웹프레임웍, 지킬은 Ruby, Python 과 Gem [[라이브러리 인스톨]]({{site.baseurl}}/2018/06/07/Ruby-jekyll-serve/)이 필요합니다.
+> * 좀 더 자세한, Jekyll-now 에 대한 기본 정보는 아래를 참조해 주세요! 🙏
+
+<br><br>
+# READ ME : Jekyll-now
+
+<img src="{{site.baseurl}}/images/system/404.jpg" width="200" align="left" style="padding:0px 30px 0px 10px">
 > March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just ✨[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files)✨ and you'll be set!
+
 
 
 
