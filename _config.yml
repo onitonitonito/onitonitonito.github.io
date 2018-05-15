@@ -19,6 +19,7 @@ favicon1: spark_rabbit01.png
 favicon2: lazycat01.png
 favicon3: angry_tig.png
 
+# If you want to register the more collection folder (underscored name)
 collections:
   - albums
 

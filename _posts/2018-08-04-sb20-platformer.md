@@ -2,14 +2,15 @@
 layout: post
 title: United07 스크래치 REMIX-Invert Platformer 🎴
 comments: true
-category: scratch
-tag: game
+category: [scratch, game]
+tag: [Platformer, United07]
+excerpt_separator: <!-- more -->
 ---
 <img src="https://goo.gl/iHX8oE" align="right">
 이것은 스크래치 리믹스 모음에 대한 간단한 요약글입니다.    
 간단한 요약글을 목차페이지에서 글목록으로 일부를 보여주는 것입니다.    
 HTML 과 MD 을 혼용하여 글을 작성 할 수 있습니다.    
-
+<!-- more -->
 
 <br><br>
 # 1.0 본문 제목 : Invert Platformer
@@ -103,7 +104,6 @@ HTML 과 MD 을 혼용하여 글을 작성 할 수 있습니다.
 <br><br>
 # 4.0 MD를 사용하면 Resize 불가능!
 > 마크다운을 사용하면 이미지 리사이즈가 안된다는 단점이 있습니다.
-> ![인트로]({{site.baseurl}}/images/post_img/20180730-02-intro.png)
 > ![레벨5]({{site.baseurl}}/images/post_img/20180730-07.png)
 > * 너무 크고 볼품없어 집니다..
 > 1. 본 게시글은 테스트용 샘플입니다.

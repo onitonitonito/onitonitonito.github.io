@@ -1,14 +1,19 @@
 ---
-music: "https://open.spotify.com/album/0jJ7mMkCkTe7p9EJgSRxgi"
+music: "https://rateyourmusic.com/release/album/fkj/french-kiwi-juice/"
 img: "https://goo.gl/PU8zeK"
 
-title: "FKJ : French Kiwi Juice"
+title: "FKJ / French Kiwi Juice"
 artist: "FKJ"
 director: ""
 
+released: "3 March 2017"
+genres: Neo-Soul, Jazz Pop, Instrumental Hip Hop, Alternative R&B, Nu Jazz, Synth Funk, Smooth Soul
+
+descriptin: "soothing, calm, female vocals, male vocals, sampling"
+
 works:
   - title: "FKJ / French Kiwi Juice"
-    composer: "FKJ & Maseado"
+    composer: "FKJ & Maseago"
 
     tracks:
       - title: "We Ain't Feeling Time"

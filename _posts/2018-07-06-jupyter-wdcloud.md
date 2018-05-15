@@ -2,10 +2,12 @@
 layout: post
 title: Python 주피터 노트북으로 Word Cloud 만들기🍐
 comments : true
-category: python
-tag: jupyter, wordcloud
+category: [python, jupyter]
+tag: wordcloud
+excerpt_separator: <!-- more -->
 ---
 ✨**주피터 노트북** ✨ (Jupyter Notebook) 을 이용해서, 문장에서 출현빈도를 글씨크기로 표현하는 워드클라우드(Word Cloud)를 만들어 보자, 워드 클라우드는 소셜네트워크 분석에 자주 사용 되는 시각화 기법이다.
+<!-- more -->
 
 ## 주피터 노트북을 이용해서, 워드 클라우드를 만들어보자
 

@@ -9,12 +9,13 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="date" align="right">
+    <br><br>
+    Written on ... {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% if page.comments %}
       {% include disqus.html %}
   {% endif %}
-  
+
 </article>

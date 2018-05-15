@@ -2,12 +2,12 @@
 layout: post
 title: Ruby지킬 가상서버(Jekyll serve)실행하기💎
 comments : true
-gategory: ruby
-tag: ruby, jekyll, serve
+gategory: [ruby, jekyll]
+tag: [ruby, jekyll, serve]
+excerpt_separator: <!-- more -->
 ---
-
 **루비기반** 웹프레임워크 지킬(jkyll)의 포스트를 작성하기 위하여, **Ruby** 를 설치하고 **Jekyll serve** 를 실행시켜 가상서버 ✨localhost:4000✨에서 작성글을 실시간으로 확인한다. 💂
-
+<!-- more -->
 
 ## 1.0 루비 설치하기 (윈도우즈 64bit with devkit) 💎
 ---

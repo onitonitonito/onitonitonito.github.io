@@ -1,18 +1,27 @@
-
 .highlight {
-  background-color: #efefef;
-  padding: 7px 7px 7px 10px;
+  background-color: $darkerGray;
+  // padding: 7px 7px 7px 10px;
+  // margin: 20px 0 20px 0;
+  overflow: scroll;
   border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
   -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
   box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
-  overflow: scroll;
+  box-shadow: 3px 3px rgba(0,0,0,0.1);
+
+  // ---- code {  }
+  // 폰트 스페이싱/패딩 참조 w3School :
+  // https://www.w3schools.com/cssref/pr_text_letter-spacing.asp
+
+  // font-family:'Bitstream Vera Sans Mono','Courier';
+  // font-size: 14px;
+  font-family: $helveticaNeue;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.5em;
 }
 
-code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-}
 
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
