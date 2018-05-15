@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: test
+permalink: /test/
 excerpt_separator: <!-- more -->
 ---
 <!-- more -->
