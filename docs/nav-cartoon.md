@@ -6,6 +6,7 @@ permalink: /cartoon/
 
 <!-- great hands for catoon lifetime, big boy tempo -->
 <article class="post">
+  <div class="post-list">
 
 
   <!-- 이상한 바브와이어 -->
@@ -24,4 +25,10 @@ permalink: /cartoon/
       <br>
   </li>  
 
+  </div>
 </article>
+
+
+<hr>
+
+<br><br>

@@ -2,7 +2,7 @@
 layout: post
 title: Ruby지킬 가상서버(Jekyll serve)실행하기💎
 comments : true
-gategory: [ruby, jekyll]
+category: [ruby, jekyll]
 tag: [ruby, jekyll, serve]
 excerpt_separator: <!-- more -->
 ---

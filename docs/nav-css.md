@@ -6,6 +6,7 @@ permalink: /css/
 
 <!-- blog post contents : described as { { content } } -->
 <article class="post">
+  <div class="post-list">
 
 
   <!-- 도라에몽 -->
@@ -34,5 +35,8 @@ permalink: /css/
       <br>
   </li>  
 
-
+  </div>
 </article>
+<hr>
+
+<br><br>

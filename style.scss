@@ -110,6 +110,15 @@ img {
   max-width: 100%;
 }
 
+// <!-- Hr 스타일 참조: https://css-tricks.com/examples/hrs/ -->
+// <!-- Simple Styles for <hr>'s -->
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
