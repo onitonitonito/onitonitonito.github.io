@@ -13,28 +13,35 @@ excerpt_separator: <!-- more -->
 자세한 기사는 [[이곳]](https://goo.gl/EbQK5y)을 눌러주세요
 <!-- more -->
 
-# 링크를 작성하는 방법
 
 
-## 1. 링크를 작성하는 방법 `... []()`
+<br><br>
+# 1. 링크를 작성하는 방법 `... []()`
 > `[링크표시]()`     
 > `예시: [[Click Here to Google]](http://www.google.com)`     
 > 예시: [[Click Here to Google]](http://www.google.com)     
 
 
-## 2. 이미지를 링크하는 방법 `... ![]()`
+
+<br><br>
+# 2. 이미지를 링크하는 방법 `... ![]()`
 > `![그림로딩 에러시 안내문](이미지 링크)`     
 > `예시: ![_그림이 로딩되지 않았을 경우는 이렇게 나타남.._](https://goo.gl/zyQCGJ)`          
 > ![_그림이 로딩되지 않았을 경우는 이렇게 나타남.._](https://goo.gl/zyQCGJ)     
 > ![_그림이 로딩되지 않았을 경우는 이렇게 나타남.._](https://goo.gl/zyQCGJㅎ)   
 
 
-## 3. 마크다운은 이미지 리사이징이 불가능 `... <img src="" width="">`
+
+<br><br>
+# 3. 마크다운은 이미지 리사이징이 불가능 `... <img src="" width="">`
 > <img src="https://goo.gl/zyQCGJ" width="150">    
 > HTML 테그를 혼용해서 사용 ... `<img src="링크주소" width="픽셀">`    
 > 링크는 인용부호 "" 를 감싸는 것을 잊지 말 것
 
-## 4. 표형식으로 작성 하기 `... |:--:|:-----:|`
+
+
+<br><br>
+# 4. 표형식으로 작성 하기 `... |:--:|:-----:|`
 > 정렬없음 : '--'    
 > 좌측정렬 : ':--'    
 > 중앙정렬 : ':--:'    
@@ -47,6 +54,8 @@ excerpt_separator: <!-- more -->
 | 우측정렬  | \'--:\'         ||
 | 중앙정렬  | \':--:\'        ||
 | 정렬없음  | \'--\'          ||
+
+
 
 <br><br>
 # 5.파이썬 코드삽입 태그
@@ -82,3 +91,75 @@ while True:
     time.sleep(0.3)
     os.system('cls')
 ```
+
+
+
+<br><br>
+# 8.0 라즈베리파이 GPIO 수위센서 코딩
+> 1. 비접속 수위센서 코딩
+> 1.RPi.GPIO modul - Digital INPUT.
+> 1. DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
+> 1. port 20,16,12 : Arduino Water level sensor
+
+|<img src="https://goo.gl/DaAWpp" width="300">　|<img src="https://goo.gl/qSr1E6" width="250">|
+|:-------:|:-------:|
+| **fig.01** - on pipes | **fig.02** - on valves |
+
+<br><br><br>
+```python
+#!/usr/bin/python3
+import RPi.GPIO as GPIO
+import time
+'''  RPi.GPIO modul - Digital INPUT.
+ DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
+ # 20,16,12 : Arduino Water level sensor
+'''
+
+SENS = []
+SENS.extend((14, 15, 18))       # Arduino Sensors
+SENS.extend((23, 24))           # Blank
+SENS.extend((25, 8, 7, 1))      # XKC-Y25-T12V SKU: SEN0204
+
+PORTS = len(SENS)
+
+def setup():
+    # BroadCom Chip Pin# Set
+    GPIO.setmode(GPIO.BCM)
+    for n in range(PORTS):
+        GPIO.setup(SENS[n], GPIO.IN)
+
+def loop():
+    COUNT = 1
+    while True:
+        print('-------------- count: %s' % COUNT)
+
+        for n in range(PORTS):
+            num_bcm = str()
+            read_bcm = GPIO.input(SENS[n])
+
+            if SENS[n] >= 10:
+                num_bcm = str(SENS[n])
+            else:
+                num_bcm = '0' + str(SENS[n])
+            print('GPIO# %s = %s' % (num_bcm, read_bcm))
+
+        print()
+        time.sleep(1)
+        COUNT += 1
+
+
+def main():
+    setup()
+
+    try:
+        loop()
+    except KeyboardInterrupt:
+        GPIO.cleanup()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+
+<!-- this & that -->
