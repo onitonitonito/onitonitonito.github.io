@@ -121,6 +121,8 @@ site.collections => {
 > 1. site.html_files = {{site.html_files}} # nothing
 > 1. site.documets = {{site.documets}}     # nothing
 
+
+
 <br><br>
 <hr>
 # 지킬(Jekyll) GitHub Documentation❄️
@@ -134,4 +136,3 @@ site.collections => {
 > * **Jekyll** GitHub Repository 는
 [[https://github.com/jekyll/jekyll]](https://github.com/jekyll/jekyll)을 참조!
 > <br><br>
-
