@@ -120,3 +120,19 @@ site.collections => {
 # 7.0 그밖의 태그들..
 > 1. site.html_files = {{site.html_files}} # nothing
 > 1. site.documets = {{site.documets}}     # nothing
+
+
+
+<br><br>
+<hr>
+# 지킬(Jekyll) GitHub Documentation❄️
+
+<a href="https://jekyllrb-ko.github.io" target="new">
+  <img src="https://jekyllrb-ko.github.io/img/logo-2x.png" width="230" align="left" alt="지킬 한글번역" style="padding:0px 30px 0px 10px">
+</a>
+
+> * **지킬 문서** (한국어번역)는
+[[https://jekyllrb-ko.github.io]](https://jekyllrb-ko.github.io)을 참조!
+> * **Jekyll** GitHub Repository 는
+[[https://github.com/jekyll/jekyll]](https://github.com/jekyll/jekyll)을 참조!
+> <br><br>
