@@ -119,7 +119,7 @@ comments: True
 </div>
 
 <!-- 네비게이션 바 : MD는 HTML테그 바깥에 위치해야 함 -->
-[[BACK]](/docs/css)
+[[BACK]](/css/)
 [[1]](/docs/css_anim_doraemon)
 [[2]](/docs/css_anim_mcmoosung)
 
