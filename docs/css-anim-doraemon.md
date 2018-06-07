@@ -1,12 +1,11 @@
 ---
 layout: blank
 comments: True
+permalink: /css-doraemon/
 ---
 
 <style>
-  body {
-    margin: 0;
-  }
+  body { margin: 0; }
 
   .content {
     position: absolute;
@@ -118,10 +117,9 @@ comments: True
 
 </div>
 
-<!-- 네비게이션 바 : MD는 HTML테그 바깥에 위치해야 함 -->
-[[BACK]](/css/)
-[[1]](/docs/css_anim_doraemon)
-[[2]](/docs/css_anim_mcmoosung)
+
+<!-- 조각 삽입화일 : 페이징 넘버링 css-paging.html -->
+{% include css-paging.html %}
 
 
 <script>

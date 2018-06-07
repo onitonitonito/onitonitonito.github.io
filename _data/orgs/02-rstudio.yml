@@ -1,0 +1,12 @@
+username: github
+name: GitHub
+
+members:
+  - name: Ryan Leckey
+    github: mehcode
+
+  - name: John Doe
+    github: jdoe
+
+  - name: SB-Soft
+    github: owo-sbsoft

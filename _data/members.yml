@@ -10,6 +10,10 @@
   github: rstudio
   repo: RStartHere
 
+- name: sbjang
+  github: owo-sbsoft
+  repo: lotto
+
 - name: United07
   github: FunXD
   repo: Arduino_on_Github
