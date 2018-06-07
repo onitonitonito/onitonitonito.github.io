@@ -33,9 +33,9 @@ b  {
 # 1.0 Lotto 번호 생성기 (6개)
 <img src="/images/post_img/20180806-000.png" width="300" align="right" style="padding: 0px 0px 0px 40px;">
 
-> * 본 CSS샘플은 **Git Codlab** 스터디의 일환으로 작성 된 연습화일을 참조하였습니다.
-> * 실제 Git 연습은 **GitPage** 로 진행을 했고, 본 CSS 샘플을 업데이트 하는 과정도 Git 스터디 진행과정과 동일하게 테스트 했습니다.
-> * 원본소스의 깃허브 화일을 Base 로 수정 하였습니다.
+> * 본 CSS샘플은 **Git Codlab** 스터디의 연습 화일을 Base로 수정 하였습니다.
+> * **Git codeLab** 연습은 본 **GitPage** 로 진행을 했고, 본 CSS 샘플을 업데이트 하는 과정도 Git 스터디 협업과정을 따라 했습니다.
+> * 상단의 [[1]]({{site.baseurl}}/css-lotto/)번 페이지를 클릭하면 [[Reload]]({{site.baseurl}}/css-lotto/) 됩니다.
 
 
 <!-- 넘버생성 위치 -->
@@ -136,7 +136,7 @@ b  {
       var html_lotto = "";
 
       for(var i=0; i<lottoNumbers.length; i++) {
-        colorPick = Math.round(Math.random()*48);
+        colorPick = Math.round(Math.random()*47);
         html_lotto += '<b style="background: '+ lottoColors[colorPick] +'">'+ lottoNumbers[i] +'</b> ';
       }
       document.getElementById("NUMBERS").innerHTML = html_lotto;
