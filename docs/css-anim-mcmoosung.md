@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: default
 comments: True
 permalink: /css-moosung/
 ---

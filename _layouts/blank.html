@@ -1,59 +1,21 @@
-<!-- 블랭크는 디폴트와 같은 개념, 단독으로 쓰임 디스커스 첨부 -->
 <!DOCTYPE html>
 <html>
-  <head>
-{% seo %}
-{% include meta.html %}
-    <!-- favicon -->
-    <link rel="icon" href="{{ site.baseurl }}/images/system/{{ site.favicon1 }}">
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
+<head>
 
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml">
-  </head>
+  <!-- favicon -->
+  <link rel="icon" href="{{ site.baseurl }}/images/system/{{ site.favicon1 }}">
 
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
 
-  <body>
-    <div class="container">
-    <header class="masthead clearfix">
-      <a href="{{ site.baseurl }}/{{ site.index1 }}" class="site-avatar"><img src="{{ site.avatar }}"></a>
-      <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/{{ site.index1 }}">{{ site.title }}</a></h1>
-        <p class="site-description">{{ site.description }}</p>
-      </div>
+</head>
 
-        {% include nav_bar.html %}
+<body>
 
-    </header>
-  </div>
+  {{ content }}
+
+</body>
 
 
-
-
-  <!-- 양삭.html을 레이아웃으로 내용을 별도로 작성할 수 있음 -->
-  <div id="main" role="main" class="container">
-    {{ content }}
-
-
-  <br><br><br><br><br><br><br><br><br>
-    {% if page.comments %}
-    {% include disqus.html %}
-    {% endif %}
-
-  </div>
-
-
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-
-  </body>
 </html>
