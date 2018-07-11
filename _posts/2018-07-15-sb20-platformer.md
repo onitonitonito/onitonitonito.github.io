@@ -6,9 +6,17 @@ category: [scratch, game]
 tag: [Platformer, United07]
 excerpt_separator: <!-- more -->
 ---
-<img src="https://goo.gl/iHX8oE" align="right">
+<img alt="스크랫치캣" src="/images/post_img/20180730-00scat.png" width="140" align="left" style="padding: 0px 30px 0px 10px;">
+<img src="https://goo.gl/iHX8oE" align="right" width="90" style="padding: 0px 0px 0px 10px;">
 이것은 스크래치 리믹스 모음에 대한 간단한 요약글입니다. 플랫포머는 스크래치에서 유행하는 간단한 미로형의 게임포맷으로, 사각형이 마리오 처럼 중력의 영향을 받으며 좌,우,점프를 할 수 있는 미로형 게임포맷인데, 스크래치의 특성을 잘 살려서 간단하게 구현할 수 있어서 많은 사람들이 응용을 하고 있습니다.    
 <!-- more -->
+
+<br><br>
+# 0.0 잡 썰 (Job Sir.)
+
+이것은 제가 만든 것은 아니고, 제가 스크래치를 가르쳐서 어쨌거나, 입문한 [아들(United07)](https://scratch.mit.edu/users/united7/projects/)에 관한 이야기 입니다. **Python** 도 가르쳤는데, 골치 아픈 🐍(뱀) 보다는 🐱(스크래치)로 게임 만드는데 더 집중하고 있습니다.. 사실 파이썬 같이 심각하고 만들기 어려운 코드보다는 스크래치가 장난감처럼 몇 분만에 뚝딱! 만들기는 참 좋죠
+
+만드는 것을 즐기고, 커뮤니티에 집중해서 협업(<strike>Git</strike> **REMIX**)하는게 중요합니다. 시작이 뭐였든 상관없는 거죠.. 사실 **Git** 사용법 도 가르쳤는데, 대충 뭐.. 까먹은듯한 모습. <strike>뭐 어른도 골치 아픈건 싫어하니가.. </strike> 혹시 입문한 애들이 있으면 **REMIX** 팔로우 시켜 주세요.. 😬
 
 <br><br>
 # 1.0 본문 제목 : Invert Platformer
