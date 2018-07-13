@@ -6,6 +6,7 @@ category: [python, jupyter]
 tag: wordcloud
 excerpt_separator: <!-- more -->
 ---
+<img alt="클라우드" width="130" align="left" style="padding: 0px 10px 0px 10px;" src="/images/post_img/20180706-0cloud.png" >
 ✨**주피터 노트북** ✨ (Jupyter Notebook) 을 이용해서, 문장에서 출현빈도를 글씨크기로 표현하는 워드클라우드(Word Cloud)를 만들어 보자, 워드 클라우드는 소셜네트워크 분석에 자주 사용 되는 시각화 기법이다.
 <!-- more -->
 
