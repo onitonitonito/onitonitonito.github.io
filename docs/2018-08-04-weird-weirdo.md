@@ -17,12 +17,4 @@ tag: funny
 | Weird Weirdo |
 
 
-
-<br><br>
-
-|<img src="https://goo.gl/9VrviN">|
-|:---:|
-| Weird Weirdo |
-
-
 <br><br><br><br><br><br>
