@@ -6,8 +6,10 @@ category: [scratch, game]
 tag: [Platformer, United07]
 excerpt_separator: <!-- more -->
 ---
-<img alt="스크랫치캣" src="/images/post_img/20180730-00scat.png" width="140" align="left" style="padding: 0px 30px 0px 10px;">
-<img src="https://goo.gl/iHX8oE" align="right" width="90" style="padding: 0px 0px 0px 10px;">
+<img alt="스크랫치캣" src="/images/post_img/20180730-00scat.png" width="140" align="left" style="padding: 0px 20px 0px 0px;">
+
+<img src="https://goo.gl/iHX8oE" align="right" width="100" style="padding: 0px 10px 0px 0px;">
+
 이것은 스크래치 리믹스 모음에 대한 간단한 요약글입니다. 플랫포머는 스크래치에서 유행하는 간단한 미로형의 게임포맷으로, 사각형이 마리오 처럼 중력의 영향을 받으며 좌,우,점프를 할 수 있는 미로형 게임포맷인데, 스크래치의 특성을 잘 살려서 간단하게 구현할 수 있어서 많은 사람들이 응용을 하고 있습니다.    
 <!-- more -->
 
