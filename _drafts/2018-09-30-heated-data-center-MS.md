@@ -1,11 +1,14 @@
 ---
 layout: post
-title: (초안) 열받은 데이터센터, 바닷 속에 넣어버린 MS🔥
+title: 열받은 데이터센터, 바닷 속에 넣어버린 MS🔥
 category: article
 tag: microsoft
+excerpt_separator: <!-- more -->
 ---
+<img alt="데이터센터!" width="150" align="left" style="padding: 0px 10px 0px 0px;" src="http://news.microsoft.com/uploads/2016/01/IMG_1298-Assembly.jpg" >
 
-(서울=뉴스1) 남도영 기자 = 마이크로소프트(MS)가 늘 뜨거운 열을 내뿜는 데이터센터를 식히기 위해 통째로 바다🌊 안에 집어넣는 황당한 아이디어✳️ 를 현실로 만들고 있다.
+(서울=뉴스1) 남도영 기자 = 마이크로소프트(MS)가 늘 뜨거운 열을 내뿜는 데이터센터를 식히기 위해 통째로 바다🌊 안에 집어넣는 황당한 아이디어✳️ 를 현실로 만들고 있다. 스코틀랜드 오크니섬 인근 바다에 데이터센터 구축, 해저 데이터센터 연구 프로젝트 '나틱' 2단계 진입 마이크로소프트의 해저 데이터센터 프로젝트 '나틱'의 팀원들(MS 제공)© News1
+<!-- more -->
 
 ## 1.0 한글로 포스트 작성하기
 
@@ -24,7 +27,7 @@ tag: microsoft
 
 [[**기사전문**]](http://v.media.daum.net/v/20180608070036024?rcmd=rn) 보기
 
-```
+```python
 # -*- coding: cp949 -*-
 from bs4 import BeautifulSoup
 
