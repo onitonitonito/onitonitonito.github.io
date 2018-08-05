@@ -121,7 +121,8 @@ site.collections => {
 > 1. site.html_files = {{site.html_files}} # nothing
 > 1. site.documets = {{site.documets}}     # nothing
 
-
+<br><br>
+<hr>
 # 지킬(Jekyll) GitHub Documentation❄️
 
 <a href="https://jekyllrb-ko.github.io" target="new">
