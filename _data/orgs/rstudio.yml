@@ -2,11 +2,11 @@ username: rstudio
 name: R-Studio
 
 members:
-  - name: 2nd Kay Park
-    github: onito
-
   - name: John Doe
     github: jdoe
 
   - name: Ryan Leckey
-    github: mehcode  
+    github: mehcode
+
+  - name: Kay other Park
+    github: onito

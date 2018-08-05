@@ -1,7 +1,11 @@
 ---
 layout: post
 title: (초안) 처음 만드는 블로그 글입니다.❤️
+comments: true
+category: [scratch, game]
+tag: [Platformer, United07]
+excerpt_separator: <!-- more -->
 ---
 이글은 설명을 위한 요약글 입니다. '_ draft' 폴더에 초안작성 기능을 보여주기 위한 간단 테스트 글로 화일 최종 변경일이 작성일로 기록됩니다.. 기존 배포된 게시글과 구분하기 위하여 제목에는 (초안)이라는 '머릿글'을 달아 두시는게 구분에 편리하겠습니다.
-
+<!-- more -->
 ??

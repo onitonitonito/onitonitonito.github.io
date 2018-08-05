@@ -2,6 +2,8 @@
 layout: default
 permalink: /members/
 ---
+<h1>MEMBERS😃</h1>
+
 # 1.0 Ordered list tag 를 이용하여 작성하는 경우
 
 <ol>
@@ -12,6 +14,7 @@ permalink: /members/
   </li>
 {% endfor %}
 </ol>
+<hr>
 
 
 
@@ -36,3 +39,4 @@ permalink: /members/
   </tr>  
 {% endfor %}
 </table>
+<hr>

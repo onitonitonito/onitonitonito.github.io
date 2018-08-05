@@ -3,6 +3,8 @@ layout: default
 permalink: /test/
 excerpt_separator: <!-- more -->
 ---
+<h1>JEKYLL-TEST🎃</h1>
+
 <!-- more -->
 # 1.0 site variable - Global
 > 1. site.time = {{site.time}}
