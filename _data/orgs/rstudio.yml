@@ -7,3 +7,6 @@ members:
 
   - name: John Doe
     github: jdoe
+
+  - name: Ryan Leckey
+    github: mehcode  
