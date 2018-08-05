@@ -8,16 +8,6 @@ permalink: /css/
 <article class="post">
   <div class="post-list">
 
-
-  <!-- 도라에몽 -->
-  <li>
-    2018.08.01 ...
-      <a href="{{ site.baseurl }}/404">
-        404 NotFound server response </a>
-      <br>
-  </li>  
-
-
   <!-- 도라에몽 -->
   <li>
     2018.07.30 ...

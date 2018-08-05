@@ -3,6 +3,8 @@ layout: default
 permalink: /test/
 excerpt_separator: <!-- more -->
 ---
+<h1>JEKYLL-TEST🎃</h1>
+
 <!-- more -->
 # 1.0 site variable - Global
 > 1. site.time = {{site.time}}
@@ -118,73 +120,3 @@ site.collections => {
 # 7.0 그밖의 태그들..
 > 1. site.html_files = {{site.html_files}} # nothing
 > 1. site.documets = {{site.documets}}     # nothing
-
-
-<br><br>
-# 8.0 라즈베리파이 GPIO 수위센서 코딩
-> 1. 비접속 수위센서 코딩
-> 1.RPi.GPIO modul - Digital INPUT.
-> 1. DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
-> 1. port 20,16,12 : Arduino Water level sensor
-
-|<img src="https://goo.gl/DaAWpp" width="300">　|<img src="https://goo.gl/qSr1E6" width="250">|
-|:-------:|:-------:|
-| **fig.01** - on pipes | **fig.02** - on valves |
-
-<br><br><br>
-```python
-#!/usr/bin/python3
-import RPi.GPIO as GPIO
-import time
-'''  RPi.GPIO modul - Digital INPUT.
- DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
- # 20,16,12 : Arduino Water level sensor
-'''
-
-SENS = []
-SENS.extend((14, 15, 18))       # Arduino Sensors
-SENS.extend((23, 24))           # Blank
-SENS.extend((25, 8, 7, 1))      # XKC-Y25-T12V SKU: SEN0204
-
-PORTS = len(SENS)
-
-def setup():
-    # BroadCom Chip Pin# Set
-    GPIO.setmode(GPIO.BCM)
-    for n in range(PORTS):
-        GPIO.setup(SENS[n], GPIO.IN)
-
-def loop():
-    COUNT = 1
-    while True:
-        print('-------------- count: %s' % COUNT)
-
-        for n in range(PORTS):
-            num_bcm = str()
-            read_bcm = GPIO.input(SENS[n])
-
-            if SENS[n] >= 10:
-                num_bcm = str(SENS[n])
-            else:
-                num_bcm = '0' + str(SENS[n])
-            print('GPIO# %s = %s' % (num_bcm, read_bcm))
-
-        print()
-        time.sleep(1)
-        COUNT += 1
-
-
-def main():
-    setup()
-
-    try:
-        loop()
-    except KeyboardInterrupt:
-        GPIO.cleanup()
-
-
-if __name__ == '__main__':
-    main()
-```
-<!--
--->

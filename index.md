@@ -45,6 +45,7 @@ layout: blank
 
 
 <!-- Markdown help (table) -->
+<hr>
 <h1 class="big"> 1.Mark-down help </h1>
 
 <ul>

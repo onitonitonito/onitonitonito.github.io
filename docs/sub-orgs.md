@@ -2,6 +2,8 @@
 layout: default
 permalink: /orgs/
 ---
+<h1>ORGS🐴</h1>
+
 <ol>
 
 {% for org_hash in site.data.orgs %}

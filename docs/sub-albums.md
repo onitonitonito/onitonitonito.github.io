@@ -5,6 +5,7 @@ permalink: /albums/
 {% for album in site.albums %}
 
 <!-- 아트스트 정보 -->
+<h1>ALBUMS🌊</h1> 
 
   <h1> {{ album.title }} </h1>
   <!-- 앨범 이미지 화일 / 앨범소스 링크 / 앨범타이틀 -->
