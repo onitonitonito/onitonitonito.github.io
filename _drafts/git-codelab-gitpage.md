@@ -46,6 +46,7 @@ GitHub에서 협업하는 과정을 아톰 에디터에서 연습해 봅니다..
 > * 마스터에서 긴급수정이 발생해서, `'git checkout -b hotfix'` 로 분기 시킴
 > * `'hotfix'` 브랜치에서 긴급 에러를 수정하고, **'Master'** 와 **'Develop'** 에서 각각 **'Merge'** 시킨다
 > * 여기까지 **'git push'** 를 하면 아래와 같이 **'Network'** '챠트'가 완성된다.
+<<<<<<< HEAD
 > * **'Master'** 와 **'Develop'** 에서 각각 **'Merge'** 를 했기 떄문에 3개의 브랜치(마스터, 디벨롭, 핫픽스)가 나란히 같은 위치에 자리를 잡았습니다.
 
 | <img src="/images/post_img/20180806-001.png" width="550"> |
