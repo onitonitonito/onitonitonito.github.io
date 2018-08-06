@@ -202,7 +202,7 @@ b  {
       var html_lotto = "";
 
       for(var i=0; i<lottoNumbers.length; i++)  {
-        colorPick = Math.round(Math.random()*48);
+        colorPick = Math.round(Math.random()*47);
         html_lotto += '<b style="background: '+ lottoColors[colorPick] +'">'+ lottoNumbers[i] +'</b> ';
       }
       document.getElementById("NUMBERS").innerHTML = html_lotto;
