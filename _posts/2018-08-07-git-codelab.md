@@ -6,6 +6,8 @@ category: [github]
 tag: [develop, co-work]
 excerpt_separator: <!-- more -->
 ---
+<img alt="옥토캣" src="/images/post_img/20180806-0.png" width="170" align="left" style="padding: 0px 30px 0px 10px;">
+
 ✨__GitHub에서 협업__ ✨하는 과정을 아톰 에디터에서 연습해 봅니다.. 항상 혼자 만드는 것이 익숙한 입장에서 처음에는 적응하는 과정이 필요하기 때문에, 그리고 제일 궁금했던 것은 과연 **'Merge'** 과정에서 업데이트 관리와 처음 접하는 사람을 힘들게 만드는 것, **Conflict** 가 발생 하는 과정을 확인해 보기 위함 입니다.
 <!-- more -->
 
