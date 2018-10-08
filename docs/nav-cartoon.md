@@ -9,11 +9,19 @@ permalink: /cartoon/
   <div class="post-list">
 
 
+    <!-- 마이 페르소나, 스파크 더 레빗 -->
+    <li>
+      2018.12.01 ...
+        <a href="{{ site.baseurl }}/docs/2018-12-01-spark-the-rabbit">
+          Spark the Rabbit, My Persona!.. 👹 </a>
+        <br>
+    </li>  
+
   <!-- 이상한 바브와이어 -->
   <li>
     2018.08.04 ...
       <a href="{{ site.baseurl }}/docs/2018-08-04-weird-weirdo">
-        Weird bob wire, Weird Weirdo.. </a>
+        Weird bob wire, Weird Weirdo.. 😃 </a>
       <br>
   </li>  
 
@@ -21,7 +29,7 @@ permalink: /cartoon/
   <li>
     2018.08.02 ...
       <a href="{{ site.baseurl }}/docs/2018-08-02-omg-amIcaught">
-        OMG! Am I caught? *Crab* </a>
+        OMG! Am I caught? *Crab* 🎃 </a>
       <br>
   </li>  
 
