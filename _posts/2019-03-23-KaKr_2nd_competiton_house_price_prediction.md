@@ -22,7 +22,7 @@ excerpt_separator: <!-- more -->
 
   1. **OLS** regression model reference site = [**Data Science School - Korean**](https://goo.gl/LUmjbD)
 
-![헤더]({{ site.baseurl }}/images/post_img/20190323-01header-house-price.png)
+![헤더](../images/post_img/20190323-01header-house-price.png)
 
 
 ```python
@@ -186,7 +186,12 @@ plt.title('number of the transaction event')
 plt.show()
 ```
 
+![헤더](../images/post_img/20190323-02hist-transaction-events.png)
+
+
+
 ## Quick-Overviewing of The Transaction Events,
+
 1. ** The Seasonal Tendancy **
     > - December to March : Low-Transaction Period ( Easy-Guess, common)
     > - June to August : Growing Transaction, but Just single annual data-set is not enough
@@ -200,6 +205,10 @@ plt.show()
   - [Calendar for Year 2014](https://www.timeanddate.com/calendar/?year=2014&country=27) (**United States**)
   - Check!! --> 15th June, 2014 is Sunday (the guess was right!)
   - Because **Buyers** want to have a relaxing weekend as well as **Dealers** ?
+
+
+
+![헤더](../images/post_img/20190323-03hist-transaction-price-season.png)
 
 
 ```python
