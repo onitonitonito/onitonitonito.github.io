@@ -22,7 +22,7 @@ excerpt_separator: <!-- more -->
 
   1. **OLS** regression model reference site = [**Data Science School - Korean**](https://goo.gl/LUmjbD)
 
-![헤더](../images/post_img/20190323-01header-house-price.png)
+![헤더](./images/post_img/20190323-01header-house-price.png)
 
 
 ```python
@@ -186,7 +186,7 @@ plt.title('number of the transaction event')
 plt.show()
 ```
 
-![헤더](../images/post_img/20190323-02hist-transaction-events.png)
+![헤더](./images/post_img/20190323-02hist-transaction-events.png)
 
 
 
@@ -208,7 +208,7 @@ plt.show()
 
 
 
-![헤더](../images/post_img/20190323-03hist-transaction-price-season.png)
+![헤더](./images/post_img/20190323-03hist-transaction-price-season.png)
 
 
 ```python
