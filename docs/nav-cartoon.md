@@ -9,6 +9,14 @@ permalink: /cartoon/
   <div class="post-list">
 
 
+    <!-- 도그 러닝학습 : 비둘기사냥 -->
+    <li>
+      2020.04.15 ...
+        <a href="{{ site.baseurl }}/docs/2020-04-18-dog-learning">
+          Dog Learning : Image Recognition 😃 </a>
+        <br>
+    </li>  
+
     <!-- 마이 페르소나, 스파크 더 레빗 -->
     <li>
       2018.12.01 ...
@@ -16,14 +24,6 @@ permalink: /cartoon/
           Spark the Rabbit, My Persona!.. 👹 </a>
         <br>
     </li>  
-
-  <!-- 이상한 바브와이어 -->
-  <li>
-    2018.08.04 ...
-      <a href="{{ site.baseurl }}/docs/2018-08-04-weird-weirdo">
-        Weird bob wire, Weird Weirdo.. 😃 </a>
-      <br>
-  </li>  
 
   <!-- 흥! 내가 잡히다 닛 -->
   <li>

@@ -6,7 +6,7 @@ category: [block_chain]
 tag: [cripto_currency]
 excerpt_separator: <!-- more -->
 ---
-<img alt="암호화폐!" width="125" align="left" style="padding: 0px 10px 0px 0px;" src="./images/post_img/20181007-00.png" >
+<img alt="암호화폐!" width="125" align="left" style="padding: 0px 10px 0px 0px;" src="/images/post_img/20181007-00.png" >
 
 파이썬을 이용하여, 간단히 블럭체인의 원리를 구현 해본다. 기본적으로 블록생성, 트랜젝션의 발생, 작업증명, 그리고 마이닝을 통해서 새로운 블록이 생성 되었을때, 그때 까지 모아진 트랜젝션 데이터를 모아서, 블럭의 거래정보에 기록하는 과정을 구현하고, Flask를 통해서 명령을 실행해 본다.
 <!-- more -->

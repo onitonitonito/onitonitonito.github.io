@@ -6,7 +6,7 @@ category: [sharing, bike]
 tag: bike
 excerpt_separator: <!-- more -->
 ---
-<img alt="cookie bike" width="130" align="left" style="padding: 0px 10px 0px 10px;" src="./images/post_img/20180601-00icon.png" >
+<img alt="cookie bike" width="130" align="left" style="padding: 0px 10px 0px 10px;" src="/images/post_img/20180601-00icon.png" >
 
 Another bike sharing service was launched by the domestic major bike manufacturer, Samchunri, in Sondo-Int’l-New-City, Incheon Korea.
 
