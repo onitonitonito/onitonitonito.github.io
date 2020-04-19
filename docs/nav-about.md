@@ -3,7 +3,7 @@ layout: page
 title: ABOUT
 permalink: /about/
 ---
-<img src="{{ site.baseurl}}/images/system/spark_rabbit.png" align="right" width="200" alt="MEOW!..." />
+<img width="200" src="{{ site.baseurl}}/images/system/spark_rabbit_00.png" align="right"/>
 
 
 # 🐈 HELLO! I'm Kay, Aka OnitOnitOnito
@@ -17,7 +17,7 @@ permalink: /about/
 <br>
 # 🚖 Contact Me (test)
 
-<img src="{{ site.baseurl}}/images/system/spark_rabbit01.png" width="150" />
+<img src="{{ site.baseurl}}/images/system/spark_rabbit_03.png" width="300" />
 
 {% include contacts.html %}
 

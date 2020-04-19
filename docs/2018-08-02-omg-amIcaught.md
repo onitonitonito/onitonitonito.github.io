@@ -25,13 +25,14 @@ tag: fishing
 
 
 
-
-<!--SIGNITURE HERE / TIGER=90, 00=-->
+<!--SIGNITURE HERE-->
 
 | **Doodles in Lifetime!**
 |:---------------------:|
-| <img width="90" src="{{site.baseurl}}/images/cartoon_img/family_tiger.png">
+| <img  width="100" src="{{site.baseurl}}/images/system/profile_00.png">
 | <b>-FIN-</b>
+
+<br><br><br>
 
 
 
@@ -40,8 +41,12 @@ tag: fishing
 
 
 <!--OTHER PICS-->
+
 # Releated Other PICs
 
 |<img src="{{site.baseurl}}/images/cartoon_img/20180802_06.jpg" width="250">.|<img src="{{site.baseurl}}/images/cartoon_img/20180802_05.jpg" width="250">|
 |:---------------------|:-----------------|
 | Abu Garcia Cast Reel | BANAX Carbon Rod |
+
+
+<!--DISQUS : COMMENTS HERE-->

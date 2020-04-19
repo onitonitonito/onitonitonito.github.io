@@ -26,7 +26,7 @@ layout: default
 <br><br><br><br>
   <div align="center">
     <H1 style="font-size: 1.3em;">Spark Family!</H1>
-    <img src="{{site.baseurl}}/images/system/spark_family.png" width="450">
+    <img src="{{site.baseurl}}/images/system/spark_family_02.png" width="450">
     <div class="quote-head">The laziness!</div>
     <div class="quote-body">..is the most beautiful thing in the world..</div>
   </div>

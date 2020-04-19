@@ -9,12 +9,12 @@ tag: dog
 
 | <img src="{{site.baseurl}}/images/cartoon_img/2020-04-18-dog-learning-00.png" width="300"> | <img src="{{site.baseurl}}/images/cartoon_img/2020-04-18-dog-learning-01.png" width="300"> |
 |:---------------------|:-----------------------|
-| **CALCULATING**      | - Chicken : 98.0 % (!)
+| ** **CALCULATING** **| - Chicken : 98.0 % (!)
+| : **DOG-LEARNING**   |
 | - Dog       : 15.3 % | **Target : locked-on! ***
 | - Cat       : 27.4 % |
-| - Air Plane :  5.2 % |  **[ZOOO-OOM!!!!]**　
+| - Air Plane :  5.2 % | **[ZOOO-OOM!!!!]**　
 | - Dove      : 82.3 % |
-
 
 
 
@@ -22,9 +22,12 @@ tag: dog
 
 
 
+
+<!--SIGNITURE HERE-->
+
 | **Doodles in Lifetime!**
 |:---------------------:|
-| <img width="250" src="{{site.baseurl}}/images/cartoon_img/family_00.png">
+| <img width="250" src="{{site.baseurl}}/images/system/spark_family_01.png">
 | <b>-FIN-</b>
 
 <br><br><br>

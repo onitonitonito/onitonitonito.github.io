@@ -22,7 +22,7 @@ beautifulsoup 를 사용하여, 대기환경 연구소에서 웹으로 제공하
 >"노래를 듣고 싶어. 가짜 거북이가 불어준다면 말이야."
 >앨리스는 너무나 간절한 말투로 부탁하자, 그리폰은 조금 기분이 나빠진 듯 했다.
 
-<img alt="아름다운수프" src="/images/post_img/20180927-0.png" width="250" align="left" style="padding: 0px 30px 0px 0px;">
+<img alt="아름다운수프" src="/images/post_img/20180927-01.png" width="250" align="left" style="padding: 0px 30px 0px 0px;">
 
 >"흥! 취향도 별나군! 이봐, 친구, 이 애한테 [**거북이 수프**] 를 불러주겠어?"
 >가짜 거북은 깊은 한숨을 쉰 후, 흐느껴서 잠긴 목소리로 노래를 부르기 시작했다.

@@ -20,6 +20,7 @@ excerpt_separator: <!-- more -->
 
 100개의 번호가 매겨진 공을 안 보이는 통에 넣고, A, B, C 세 사람이 나와 각자 공을 뽑는다, 조건에 만족하는 숫자가 나오면 통과가 되지만, 그렇지 않으면 다시 공을 집어넣고 뽑기를 반복한다. 여기에 확률적인 난이도를 높이기 위해 조건이 붙는다.
 > <img src="/images/post_img/20181012-01pick_the_ball.png" width="450">
+>
 > -   A 는 `90` 보다 작은 수를 뽑으면 통과 (작업증명)을 받아준다.  
 > -   B 는 `50` 보다 작은 수를 뽑아야 통과 (작업증명)을 받아준다.    
 > -   C 는 `5` 이하의 숫자를 뽑았을 때만 통과시켜 준다.
@@ -137,8 +138,8 @@ excerpt_separator: <!-- more -->
 <br><br>
 
 | <img src="/images/post_img/20181012-02chains.png" width="450"> |
-|:----------------------------------------------:|
-|[image ref.]: [Understanding How Blockchain Works](https://blog.ndcconferences.com/understanding-blockchain/)|
+| :----------------------------------------------------------: |
+| [image ref.]: [Understanding How Blockchain Works](https://blog.ndcconferences.com/understanding-blockchain/) |
 
 - 블럭해쉬의 입력 값을 변경시킬 수 있는 유일한 변수는 논스(nonce)다.
 - 논스를 변경하며, 해쉬값을 계산해서 난이도조건을 만족하는 값이 나올 때 반복

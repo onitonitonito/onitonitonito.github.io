@@ -3,9 +3,7 @@
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-
-# avatar: /images/system/sparx-helmet.jpg
-avatar: /images/system/lazycat01.png
+avatar: /images/system/profile_02.png
 
 title: Onito™ in Wonderland
 description: NBTABY .. Nothing but today, Anything but yesterday.
@@ -16,9 +14,9 @@ author:
   twitter: onito
 
 # favicon at {{ site.baseurl }}/images/system/{{ site.favicon1 }}
-favicon1: spark_rabbit01.png
-favicon2: lazycat01.png
-favicon3: angry_tig.png
+favicon1: profile_00.png
+favicon2: profile_01.png
+favicon3: profile_02.png
 
 # If you want to register the more collection folder (underscored name)
 collections:

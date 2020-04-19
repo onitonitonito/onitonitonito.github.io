@@ -20,7 +20,7 @@ tag: character
 
 <br><br>
 
-<img width="600" src="{{site.baseurl}}/images/system/spark_family.png">
+<img width="600" src="{{site.baseurl}}/images/system/spark_family_00.png">
 
 <br><br>
 
@@ -44,3 +44,5 @@ tag: character
 |:---------------------:|
 | <img  width="100" src="{{site.baseurl}}/images/cartoon_img/family_tiger.png">
 | <b>-FIN-</b>
+
+<!--DISQUS : COMMENTS HERE-->
