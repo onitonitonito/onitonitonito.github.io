@@ -17,21 +17,21 @@ permalink: /cartoon/
         <br>
     </li>  
 
-  !-- ... --
-  <li>
-    2020.04.15 ...
-      <a href="{{ site.baseurl }}/docs/2020-04-20-">
-        post-title-here! 😃 </a>
-      <br>
-  </li>  
-  -->
+    !-- 도그 러닝학습 : 비둘기사냥 --
+    <li>
+      2020.04.15 ...
+        <a href="{{ site.baseurl }}/docs/2020-04-15-dog-learning">
+          Dog Learning : Image Recognition 😃 </a>
+        <br>
+    </li>      
+-->
 
 
-  <!-- 도그 러닝학습 : 비둘기사냥 -->
+  <!-- QUE SERA SERA -->
   <li>
-    2020.04.15 ...
-      <a href="{{ site.baseurl }}/docs/2020-04-15-dog-learning">
-        Dog Learning : Image Recognition 😃 </a>
+    2020.05.13 ...
+      <a href="{{ site.baseurl }}/docs/2020-05-13-quesera">
+        QUE SERA SERA : Sing-Along-Version 🎵 </a>
       <br>
   </li>  
 
