@@ -53,7 +53,8 @@ footer-links:
 disqus: kay
 
 # Enter your Google Analytics web tracking code to activate tracking
-google_analytics: UA-101274778-1
+# google_analytics: UA-101274778-1     # onito
+google_analytics: UA-173237974-1
 
 # Your website URL (e.g. http://barryclark.github.io
 # or http://www.barryclark.co)
