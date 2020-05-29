@@ -24,6 +24,15 @@ tag: fishing
 <br><br><br><br><br><br><br><br><br>
 
 
+<!--I'M STUPID-->
+
+| __Oh, I'm stupid!__
+|:---------------------:|
+| <img src="{{site.baseurl}}/images/cartoon_img/20180802_04.jpg" width="220">
+| <b>-FIN-</b>
+
+<br><br><br>
+
 
 <!--SIGNITURE HERE-->
 

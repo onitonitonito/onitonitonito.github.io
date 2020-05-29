@@ -4,7 +4,7 @@ _posts_draft/
 _site/
 .sass-cache/
 _1.html
-
+*.lnk
 
 # If you have DNS, put the address in CNAME --
 CNAME
