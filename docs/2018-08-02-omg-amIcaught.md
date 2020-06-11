@@ -26,7 +26,7 @@ tag: fishing
 
 <!--I'M STUPID-->
 
-| __Oh, I'm stupid!__
+| __Oh, I'm so stupid!__
 |:---------------------:|
 | <img src="{{site.baseurl}}/images/cartoon_img/20180802_04.jpg" width="220">
 | <b>-FIN-</b>

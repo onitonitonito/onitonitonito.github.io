@@ -35,7 +35,15 @@ permalink: /cartoon/
       <br>
   </li>  
 
-  <!-- 마이 페르소나, 스파크 더 레빗 -->
+    <!-- Doodles park, eva costume -->
+    <li>
+      2020.04.22 ...
+        <a href="{{ site.baseurl }}/docs/2020-04-22-doodles">
+          Spark, EVA costume, Obedient Shinji 🎭 </a>
+        <br>
+    </li>  
+
+  <!-- my persona, spark the rabbit -->
   <li>
     2018.12.01 ...
       <a href="{{ site.baseurl }}/docs/2018-12-01-spark-the-rabbit">
@@ -43,7 +51,7 @@ permalink: /cartoon/
       <br>
   </li>  
 
-  <!-- 흥! 내가 잡히다 닛 -->
+  <!-- 흥! 내가 잡히다닛 -->
   <li>
     2018.08.02 ...
       <a href="{{ site.baseurl }}/docs/2018-08-02-omg-amIcaught">
