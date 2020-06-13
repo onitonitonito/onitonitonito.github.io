@@ -26,7 +26,11 @@ layout: default
 <br><br><br><br>
   <div align="center">
     <H1 style="font-size: 1.3em;">Spark Family!</H1>
-    <img src="{{site.baseurl}}/images/system/spark_family_02.png" width="450">
+
+    <!-- *IMAGE: SPARK FAMILLY  -->
+    <img width="450" src="{{site.baseurl}}/images/system/spark_family_02.png">
+
+    <!-- THE LAZINESS! .. IS THE MOST BEAUTIFUL THING -->
     <div class="quote-head">The laziness!</div>
     <div class="quote-body">..is the most beautiful thing in the world..</div>
   </div>
@@ -34,7 +38,7 @@ layout: default
 
 
 
-<!-- Markdown help (table) -->
+<!-- MARKDOWN HELP (TABLE!) -->
 <hr>
 <h1 style="font-size: 1.3em;"> 1.Mark-down help </h1>
 

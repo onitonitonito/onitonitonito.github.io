@@ -5,6 +5,7 @@ _site/
 .sass-cache/
 _1.html
 *.lnk
+desktop.ini
 
 # If you have DNS, put the address in CNAME --
 CNAME
