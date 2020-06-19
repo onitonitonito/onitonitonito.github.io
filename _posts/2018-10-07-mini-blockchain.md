@@ -80,13 +80,13 @@ In block_class, there're 3 json files.
 
 This is not exact as it can be, but just alludes coinbase transaction. Because it is compensation for mining, sender is nobody, recipient is randomly generated node ID and amount is set as 100, form of variable for mining reward.
 
-<pre>
+{% highlight python linenos %}
     {
      "sender": "0",
      "recipient": "17460cdf96bc403ca792bf08a7f87d4d",
      "amount": 100
     }
-</pre>
+{% endhighlight python linenos %}
 
 
 
@@ -116,16 +116,15 @@ This is not exact as it can be, but just alludes coinbase transaction. Because i
 > The rest of code part is at [**onitonitonito/block_chain_study**](https://github.com/onitonitonito/block_chain_study)
 
 
-```python
+{% highlight python linenos %}
 """
-* Flask를 이용해서, 블록체인 API를 제공
+# Flask를 이용해서, 블록체인 API를 제공
 """
 # import json
 # from textwrap import dedent
 
-from flask import Flask, jsonify, request, render_template, redirect
 from uuid import uuid4
-
+from flask import (Flask, jsonify, request, render_template, redirect)
 from block_class.block_chain import BlockChain
 
 
@@ -243,4 +242,4 @@ def write_chains():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
-```
+{% endhighlight python linenos %}

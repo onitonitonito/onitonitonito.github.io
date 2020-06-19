@@ -6,14 +6,17 @@ category: [raspberry-pi]
 tag: [IOT, GPIO]
 excerpt_separator: <!-- more -->
 ---
-<img alt="클라우드" width="140" align="left" style="padding: 0px 20px 0px 10px;" src="/images/post_img/20180630-0logo.png" >
+<img width="140" align="left" style="padding: 0px 20px 0px 10px;"
+src="/images/post_img/20180630-0logo.png" >
 
 DFRobot 의 비접촉 수위센서(Non-contact Liquid Level Sensor) XKC-Y25-T12V SKU: SEN0204 는, 보이지 않는 탱크나 파이프 내부에 공기가 찼는지, 물이 찼는지를 감지하는 센서입니다. 바이너리 신호선택(1,0)을 돌려줍니다. 라즈베리파이의 GPIO (Genreral purpose Input Output) 포트를 이용하여 신호를 감지 하는 코딩을 해봅니다.
 <!-- more -->
 
 
 <br><br>
+
 # 1.0 라즈베리파이 GPIO 수위센서
+
 > 1. 비접속 수위센서 코딩
 > 1.RPi.GPIO modul - Digital INPUT.
 > 1. DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
@@ -24,8 +27,12 @@ DFRobot 의 비접촉 수위센서(Non-contact Liquid Level Sensor) XKC-Y25-T12V
 | **fig.01** - on pipes | **fig.02** - on valves |
 
 
+
+
 <br><br>
+
 ## Introduction of XKC-Y25-T12V SKU
+
 > The non-contact liquid level sensor utilizes advanced signal processing technology by using a powerful chip with high-speed operation capacity to achieve non-contact liquid level detection. No contact with liquid makes the module suitable for hazardous applications such as detecting toxic substances, strong acid, strong alkali and all kinds of liquid in an airtight container under high pressure. There are no special requirements for the liquid or container and the sensor is easy to use and easy to install.
 The liquid level sensor is equipped with an interface adapter that makes it compatible with DFRobot “Gravity” interface. There are 4 levels of sensitivity which are set by pressing the SET button.
 
@@ -36,8 +43,11 @@ The liquid level sensor is equipped with an interface adapter that makes it comp
 
 
 
+
 <br><br>
+
 ## Pin Description
+
 Liquid Level Sensor-XKC-Y25-T12V Pin defination
 
 |<img src="/images/post_img/20180630-02pi-02.png" width="550">|
@@ -56,8 +66,11 @@ Liquid Level Sensor-XKC-Y25-T12V Pin defination
 
 
 
+
 <br><br>
+
 ## Non-contact Liquid Level Sensor Adapter
+
 Liquid Level Sensor-XKC-Y25-T12V Pin defination
 
 
@@ -79,6 +92,8 @@ Liquid Level Sensor-XKC-Y25-T12V Pin defination
 |　Right_3 |GND|　GND |
 
 
+
+
 <br><br>
 
 |<img src="/images/post_img/20180630-02pi-01.png" width="550">　|
@@ -90,34 +105,43 @@ Liquid Level Sensor-XKC-Y25-T12V Pin defination
 <br><br>
 ## 2.0 파이썬 코드삽입 태그
 
-```python
+{% highlight python linenos %}
 #!/usr/bin/python3
-import RPi.GPIO as GPIO
-import time
-'''  RPi.GPIO modul - Digital INPUT.
- DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
- # 20,16,12 : Arduino Water level sensor
+'''  
+# RPi.GPIO modul - Digital INPUT.
+# DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
+# - 20,16,12 : Arduino Water level sensor
 '''
+import time
+import RPi.GPIO as GPIO
 
 SENS = []
-SENS.extend((14, 15, 18))       # Arduino Sensors
-SENS.extend((23, 24))           # Blank
-SENS.extend((25, 8, 7, 1))      # XKC-Y25-T12V SKU: SEN0204
+SENS.extend((14, 15, 18))   # Arduino Sensors
+SENS.extend((23, 24))       # Blank
+SENS.extend((25, 8, 7, 1))  # XKC-Y25-T12V SKU: SEN0204
 
-PORTS = len(SENS)
+NUM_PORTS = len(SENS)       # 9 ports
+
+def main():
+    setup()
+
+    try:
+        loop()
+    except KeyboardInterrupt:
+        GPIO.cleanup()
 
 def setup():
     # BroadCom Chip Pin# Set
     GPIO.setmode(GPIO.BCM)
-    for n in range(PORTS):
+    for n in range(NUM_PORTS):
         GPIO.setup(SENS[n], GPIO.IN)
 
 def loop():
-    COUNT = 1
+    count = 1
     while True:
-        print('-------------- count: %s' % COUNT)
+        print('-------------- count: %s' % count)
 
-        for n in range(PORTS):
+        for n in range(NUM_PORTS):
             num_bcm = str()
             read_bcm = GPIO.input(SENS[n])
 
@@ -129,21 +153,12 @@ def loop():
 
         print()
         time.sleep(1)
-        COUNT += 1
-
-
-def main():
-    setup()
-
-    try:
-        loop()
-    except KeyboardInterrupt:
-        GPIO.cleanup()
-
+        count += 1
 
 if __name__ == '__main__':
     main()
-```
+{% endhighlight %}
+
 
 
 <!-- this & that -->

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (테스트) 열받은 데이터센터, 바닷 속에 넣어버린 MS🔥
+title: TEST-열받은 데이터센터, 바닷 속에 넣어버린 MS🔥
 category: article
 tag: microsoft
 excerpt_separator: <!-- more -->
