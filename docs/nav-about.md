@@ -8,9 +8,10 @@ permalink: /about/
 
 <!-- HELLO -->
 '<b style="font-size: 1.8em;">Hello!</b>'
-__I'm Kay__
+__I'm Kay__ <a href="https://bit.ly/32WzX4W" target="new">👋</a>
 
-<!--* IMAGE : KEY IN REAL LIFE -->
+
+<!--* IMAGE : RABBIT IN REAL LIFE -->
 [<img width="300" src="/images/docs_img/hello_im_kay.png" />](https://bit.ly/3ePSfHq)
 
 

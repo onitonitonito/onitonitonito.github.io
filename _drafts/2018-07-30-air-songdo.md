@@ -1,41 +1,40 @@
 ---
 layout: post
-title: 웹스크랩핑-공기질 데이터를 분석하기 (아름다운수프)😸
+title: Web-scrapping the air-quality data with Beautifulsoup😸
 comments: true
 category: [Webscrapping]
 tag: [bs4, beautifulsoup]
 excerpt_separator: <!-- more -->
 ---
-<img alt="사스가한국" src="/images/post_img/20180927-00.png" width="140" align="left" style="padding: 0px 30px 0px 10px;">
+<img src="/images/post_img/20180927-00.png" width="140" align="left" style="padding: 0px 30px 0px 10px;">
 
-beautifulsoup 를 사용하여, 대기환경 연구소에서 웹으로 제공하는 실시간 공기질 측정 데이터값을 불러와 Pandas로 변형하고 matplotlib로 분석해 봅니다. 제공받는 측정데이터는 PM2.5 PM10 미세먼지를 포함, 아황산가스(SO2), 이산화질소(NHO2), 오존(O3)과 이산화탄소(CO2), AKA 이산화가스,가 있습니다.
+'<span id="start-ch">Beautiful</span> Soup', A famous Python library for Web-scrapping, originally came from the conversation in 'Alice in Wornderland'. A Programmer seems to have a fandom to 'Alice'. a many name, title, and metaphore come from the book.
+
 <!-- more -->
 
 <br><br>
+# Alice in Wonderland
 
-# 제 9장 모조 거북 이야기
-> 공작부인은 들어서며 앨리스에게 다정한 척 치근댄다. 공작부인이 어떤 이야기든 교훈을 늘어 놓자 앨리스는 지루해 한다. 이 때 하트 여왕이 나타나고 공작부인은 도망간다. 하트 여왕은 앨리스에게 그리폰을 타고 모조 거북을 만나러 가라고 명령한다.
+<img width="250" align="left" style="padding: 40px 20px 0px 0px;"
+src="/images/post_img/20180927-01.png" />
 
+```
+The Mock Turtle sighed deeply, and began,
+in a voice sometimes choked with sobs,
+to sing this:--
+  Beautiful Soup, so rich and green,
+  Waiting in a hot tureen!
+  Who for such dainties would not stoop?
 
-## 그리폰이 물었다.
+  Soup of the evening, beautiful Soup!
+  Soup of the evening, beautiful Soup!
+  Beau--ootiful Soo--oop!
+  Beau--ootiful Soo--oop!
 
->"노래를 듣고 싶어. 가짜 거북이가 불어준다면 말이야."
->앨리스는 너무나 간절한 말투로 부탁하자, 그리폰은 조금 기분이 나빠진 듯 했다.
-
-<img alt="아름다운수프" src="/images/post_img/20180927-01.png" width="250" align="left" style="padding: 0px 30px 0px 0px;">
-
->"흥! 취향도 별나군! 이봐, 친구, 이 애한테 [**거북이 수프**] 를 불러주겠어?"
->가짜 거북은 깊은 한숨을 쉰 후, 흐느껴서 잠긴 목소리로 노래를 부르기 시작했다.
->
-> "✨**아름다운수프**✨, 기름진 초록빛 수프가"
-뜨거운 수프 그릇에서 기다리고 있다네.
-저렇게 맛있는 음식을 누가 거절 할 수 있으랴?
->
->저녁의 수프, 아름다운 수프!
-아르 - 름다운 수우우-프!
-아르 - 름다운 수우우-프!
-
-
+  Soo--oop of the e--e--evening,
+  Beautiful, beautiful Soup!
+```
+* Alice in Wonderland : [Beautifulsoup song](https://bit.ly/30Qfmwz) by Mock turtle
 
 <br><br>
 # 1.0 환경정보 공개시스템
@@ -48,16 +47,14 @@ beautifulsoup 를 사용하여, 대기환경 연구소에서 웹으로 제공하
 | [[보건환경연구원]](https://goo.gl/AuTGRf) 송도지역 공기질 측정데이터 |
 
 
-**'아름다운수프'** 는 대표적인 Python 웹스크래핑 라이브러리인데, 위에 잠시 소개한, **'이상한 나라의 앨리스'** 에 나오는 **'모조 거북'** 이야기에서 나오는... 앨리스 **빅팬** 의 덕심인 듯 합니다~... ㅉㅉㅉ.. <strike>이 싸이트 주인장도.. ㅈㅁㅁ</strike>
-
-어쨌든, 여차저차 해서, 보건환경 연구소의 이틀치 공기질 데이터를 스크래핑으로 긁어와서 분석해 보는 것이 본 포스트의 주제가 되겠습니다. 간단한 스크래핑 스크립트를 만들어 Pandas 로 분석하기 위해, 데이터형식을 맞춰주고, DataFrame 포맷으로 변경해 줍니다.
+보건환경 연구소의 이틀치 공기질 데이터를 스크래핑으로 긁어와서 분석해 보는 것이 본 포스트의 주제가 되겠습니다. 간단한 스크래핑 스크립트를 만들어 Pandas 로 분석하기 위해, 데이터형식을 맞춰주고, DataFrame 포맷으로 변경해 줍니다.
 
 >
 | <img src="/images/post_img/20180927-03scripts.png" width="600"> |
 |:----------------------------------------------|
 | **Fig.01** - 최종적으로 스크레핑한 데이터값을 DF형식으로 저장 |
 
-이런 식입니다, 일단 DataFrame 포맷으로 변경하면, 씹고-뜯고-즐기고-맛보고 할수 있는 포맷으로 변경이 완료되었습니다. 데이터 분석의 전처리가 완료 되었습니다.
+이런 식입니다, 일단 DataFrame 포맷으로 변경하면, Data를 자유롭게 뜯어볼수 있는 포맷으로 변경이 완료되었습니다. 데이터 분석의 전처리가 완료 되었습니다.
 
 
 <br><br>
@@ -92,6 +89,6 @@ beautifulsoup 를 사용하여, 대기환경 연구소에서 웹으로 제공하
 
 **별도의 API 가 있는지는 모릅니다.** <strike>나도 안해봐서 모름...</strike>
 
-각종 공기질 상태를 보여주는 앱은 많은데, 추세를 보여주는 것은 없.. <strike>있나?...</strike> 책임질 말은 잘 안하는 관계로
+각종 공기질 상태를 보여주는 앱은 많은데, 추세를 보여주는 것은 없.. <strike>있나?...</strike>
 
 **급히 마침니다~..**

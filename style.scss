@@ -1,13 +1,14 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+/**************/
+/*  IMPORTS   */
+/**************/
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
+
+// Syntax highlighting, svg-icons @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -371,3 +372,17 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+
+
+/***************************/
+/* CUSTOM-ADD CSS for POST */
+/***************************/
+
+#start-ch {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: normal;
+  font-display: fallback;
+}

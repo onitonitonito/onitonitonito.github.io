@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파이썬 미니블록체인 테스트(트랜잭션,작업증명,마이닝)🍪
+title: Python mini-blockChain (Transaction,POW,mining)🍪
 comments: true
 category: [block_chain]
 tag: [cripto_currency]
@@ -8,14 +8,15 @@ excerpt_separator: <!-- more -->
 ---
 <img alt="암호화폐!" width="125" align="left" style="padding: 0px 10px 0px 0px;" src="/images/post_img/20181007-00.png" >
 
-파이썬을 이용하여, 간단히 블럭체인의 원리를 구현 해본다. 기본적으로 블록생성, 트랜젝션의 발생, 작업증명, 그리고 마이닝을 통해서 새로운 블록이 생성 되었을때, 그때 까지 모아진 트랜젝션 데이터를 모아서, 블럭의 거래정보에 기록하는 과정을 구현하고, Flask를 통해서 명령을 실행해 본다.
+
+<span id="start-ch">Here</span>, I will introduce a simple implement of the mining a coin, which is important process to lock the block-chain. The processes are, creating transaction data, hash calculation, and proof-of-work (POW). Those will finally lock the block at the end of the chain. this whole process will be generated through Flask Server.
 <!-- more -->
 
 <br><br><br>
 # BLOCKCHAIN for DUMMIES
 > Everybody talks these days about the Blockchain. Everybody. But ask somebody about it. They will have a hard time trying to explain to you what is Blockchain.
 
-| <img src="/images/post_img/20181007-01-intro.png" width="550"> |
+| <img src="/images/post_img/20181007-01.png" width="550"> |
 |:----------------------------------------------:|
 |[image ref.]: [Blockchain for dummies](https://goo.gl/nfdANj)|
 
@@ -50,7 +51,7 @@ When '**chain.json**', a written history file, exists, the block history will be
 
 <br><br>
 
-| <img src="/images/post_img/20181007-01bash_run.png" width="550"> |
+| <img src="/images/post_img/20181007-02.png" width="550"> |
 |:----------------------------------------------:|
 |a |
 
@@ -64,7 +65,7 @@ When '**chain.json**', a written history file, exists, the block history will be
 
 <br><br>
 
-| <img src="/images/post_img/20181007-02chain_help.png" width="450"> |
+| <img src="/images/post_img/20181007-03.png" width="450"> |
 |:----------------------------------------------:|
 |a |
 
@@ -92,7 +93,7 @@ This is not exact as it can be, but just alludes coinbase transaction. Because i
 
 <br><br>
 
-| <img src="/images/post_img/20181007-03structures.png" width="250"> |
+| <img src="/images/post_img/20181007-04.png" width="250"> |
 |:----------------------------------------------:|
 |a  |
 
@@ -106,8 +107,8 @@ This is not exact as it can be, but just alludes coinbase transaction. Because i
 
 <br><br>
 # 5. REFERENCES
-> 1. 블록체인 구현 (블록생성, 트랜잭션, 작업증명, 마이닝) -  https://goo.gl/M6XU5v
-> 2. 파이썬으로 블록체인 개발 ( 아직 Part1밖에 없음) : https://goo.gl/V2owrp
+> 1. [Making Blockchain with Python ( Only available Part.1)](https://goo.gl/V2owrp)
+> 1. [Python Blockchain (Create Block, Transaction, mining)](https://goo.gl/M6XU5v)
 
 
 
@@ -118,7 +119,7 @@ This is not exact as it can be, but just alludes coinbase transaction. Because i
 
 {% highlight python linenos %}
 """
-# Flask를 이용해서, 블록체인 API를 제공
+# BlockChain API with Python Flask server
 """
 # import json
 # from textwrap import dedent
@@ -130,7 +131,7 @@ from block_class.block_chain import BlockChain
 
 app = Flask(__name__)
 
-# 32-bits 유니크 아이디를 생성한다 - '11864aaa-d1b2-45af-9c5a-c21dda71c6fc'
+# to create 32-bits UID - '11864aaa-d1b2-45af-9c5a-c21dda71c6fc'
 node_identifier = str(uuid4()).replace("-", "")
 
 bc = BlockChain()
@@ -153,7 +154,7 @@ def full_chain():
 
 @app.route("/mine", methods=["GET"])
 def mine():
-    # 마지막 블럭의 작업증명을 기준으로 POW을 계산한다 (보상100)
+    # To Calculate POW, depending on the previous hash (compensation=100)
     last_block = bc.last_block
     last_proof = last_block["proof"]
 
@@ -181,7 +182,7 @@ def mine():
 
 @app.route("/transactions/new", methods=["GET", "POST"])
 def new_transaction():
-    # 수신,송신,금액이 존재하면 거래를 기록하고 내용을 보여줌
+    # to write and show the sender, recipient, amount if exist
     if request.method == "POST":
         # values = request.get_json()
 
@@ -216,14 +217,14 @@ def new_transaction():
 
 @app.route("/transactions", methods=["GET"])
 def show_transaction():
-    # 블록에 기록하기 위해 모인, 기록 전, 거래자료를 조회한다.
+    # In order to record in the block, query the collected, before
     response = bc.current_transactions
     return jsonify(response), 200
 
 
 @app.route("/transactions/all", methods=["GET"])
 def show_transaction_all():
-    # 블록체인에서 모든 거래내역만 뽑아낸다 (채굴보상은 거래제외)
+    # all transaction details are extracted (mining compensation is excluded)
     echo = bc.show_all_transaction(bc.chain)
     echo = "<pre>" + echo + "</pre>"
 
@@ -231,7 +232,7 @@ def show_transaction_all():
 
 @app.route("/write", methods=["GET"])
 def write_chains():
-    # 이제까지 모인 체인블록을 Json 화일에 기록/보관한다.
+    # The block, collected so far is stored in the Json file.
     chains = bc.write_json()
     response = {
         "chains": chains,

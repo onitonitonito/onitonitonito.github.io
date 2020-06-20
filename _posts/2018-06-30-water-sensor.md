@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 라즈베리파이 GPIO를 이용한 비접촉 수위센서 코딩💦
+title: Non-contact Liquid Level Sensor w/ Raspberry-PI GPIO💦
 comments: true
 category: [raspberry-pi]
 tag: [IOT, GPIO]

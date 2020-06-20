@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃허브 협업 프로세스 연습하기 (Part-1)💑
+title: To Practice Co-operative working process w/ GitHub (Part-1)💑
 comments: true
 category: [github]
 tag: [develop, co-work]

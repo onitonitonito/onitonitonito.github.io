@@ -11,7 +11,7 @@ excerpt_separator: <!-- more -->
 <!-- IT -->
 <img width="125" align="left" style="padding: 0px 10px 0px 0px;" src="/images/post_img/20200328-00.png" >
 
-'<b style="font-size: 1.8em;">The</b>'
+'<span id="start-ch">The</span>'
 python 'turtle' is a simple drawing tool which is based on one of the representative python GUI toolkits, 'tkinter'. It is simeple and easy to use so that many python trainee learns 'turtle' as one of the must-have-courses.
 
 <!-- more -->
@@ -25,14 +25,14 @@ python 'turtle' is a simple drawing tool which is based on one of the representa
 src="/images/post_img/20200328-01.png" >
 
 <!-- The -->
-'<b style="font-size: 1.8em;">Because</b>' the commands are so intuitive and simple like penup(), pendown(), many beginners are learn it through simple built-in IDE, or text editor. If you already learned it, are bored by simeple move and complicated input, why don't you try to multiple move of turtles and much beautiful choriographs. plus, let's try more of PyQt5, famous window GUI. let's gives turtle a shadow clone jutsu.
+'<span id="start-ch">Because</span>' the commands are so intuitive and simple like penup(), pendown(), many beginners are learn it through simple built-in IDE, or text editor. If you already learned it, are bored by simeple move and complicated input, why don't you try to multiple move of turtles and much beautiful choriographs. plus, let's try more of PyQt5, famous window GUI. let's gives turtle a shadow clone jutsu.
 
 
 
 <br><br>
 
 <!-- I -->
-'<b style="font-size: 1.8em;">I</b>'
+'<span id="start-ch">I</span>'
 use the folder structure is as below, but you can change it. because I add another modules below 'k-mooc-reboot', I just set like this according to my coding note.
 
 ```python
@@ -54,7 +54,7 @@ use the folder structure is as below, but you can change it. because I add anoth
 <br><br>
 
 <!-- I -->
-'<b style="font-size: 1.8em;">I</b>'
+'<span id="start-ch">I</span>'
 __atteched gitGist, which will be located at the directory above__
 
 1. turtles_mulple_moves.py - main
@@ -76,7 +76,7 @@ __atteched gitGist, which will be located at the directory above__
 <br><br>
 
 <!-- How -->
-'<b style="font-size: 1.8em;">How</b>'
+'<span id="start-ch">How</span>'
 __to stack multiple turtle drawing__
 
 <img width="700" src="/images/post_img/20200328-02.png" />
@@ -91,7 +91,7 @@ __to stack multiple turtle drawing__
 <br><br>
 
 <!-- The -->
-'<b style="font-size: 1.8em;">The</b>'
+'<span id="start-ch">The</span>'
 __Exampes__
 
 <img width="500" src="/images/post_img/20200328-03.png" />
@@ -104,7 +104,7 @@ __Exampes__
 <br><br>
 
 <!-- The -->
-'<b style="font-size: 1.8em;">The</b>'
+'<span id="start-ch">The</span>'
 __main code block__
 
 * [[__GitGist Code__](https://bit.ly/3f16h9b)]: turtles_multiple_moves.py
