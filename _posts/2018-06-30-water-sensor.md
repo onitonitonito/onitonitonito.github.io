@@ -9,7 +9,7 @@ excerpt_separator: <!-- more -->
 <img width="140" align="left" style="padding: 0px 20px 0px 10px;"
 src="/images/post_img/20180630-0logo.png" >
 
-DFRobot 의 비접촉 수위센서(Non-contact Liquid Level Sensor) XKC-Y25-T12V SKU: SEN0204 는, 보이지 않는 탱크나 파이프 내부에 공기가 찼는지, 물이 찼는지를 감지하는 센서입니다. 바이너리 신호선택(1,0)을 돌려줍니다. 라즈베리파이의 GPIO (Genreral purpose Input Output) 포트를 이용하여 신호를 감지 하는 코딩을 해봅니다.
+<span id="start-ch">DFRobot</span>'s Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204 is a sensor that detects the condition whether there is air or water in an invisible tank or pipe Returning binary signal selection. Let's code to detect the signal using the RaspberryPI GPIO port (Genreral purpose Input Output).
 <!-- more -->
 
 
@@ -107,11 +107,11 @@ Liquid Level Sensor-XKC-Y25-T12V Pin defination
 
 {% highlight python linenos %}
 #!/usr/bin/python3
-'''  
+"""
 # RPi.GPIO modul - Digital INPUT.
 # DFRobot Non-contact Liquid Level Sensor XKC-Y25-T12V SKU: SEN0204
 # - 20,16,12 : Arduino Water level sensor
-'''
+"""
 import time
 import RPi.GPIO as GPIO
 

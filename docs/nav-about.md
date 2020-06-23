@@ -12,7 +12,7 @@ __I'm Kay__ <a href="https://bit.ly/32WzX4W" target="new">👋</a>
 
 
 <!--* IMAGE : RABBIT IN REAL LIFE -->
-[<img width="300" src="/images/docs_img/hello_im_kay.png" />](https://bit.ly/3ePSfHq)
+[<img width="340" style="padding: 0px 0px 0px 40px;" src="/images/docs_img/hello_im_kay.png" />](https://bit.ly/3ePSfHq)
 
 
 
@@ -49,8 +49,15 @@ __Gadgets, I stick to__
   > * acctually ThinkPad has similar touches and rebounce, which were obviously splitted into like-group and dislike-group. ~~come to think of it, most key-boards are like that, nothing particular.~~
 
 <!--* IMAGE :  MY GADGETS -->
+<!--
 <img width="550"  style="padding: 0px 30px 0px 10px;"
-src="{{ site.baseurl}}/images/docs_img/my_gadgets.png"/>
+src="{{ site.baseurl}}/images/docs_img/my_gadgets.png"/> -->
+
+<!--* IMAGE :  MY GADGETS -->
+<img width="550" style="padding: 0px 0px 0px 50px;"
+src="{{ site.baseurl}}/images/docs_img/my_gadgets_01.png"/>
+
+
 
 
 
