@@ -2,8 +2,8 @@
 layout: post
 title: To Practice Co-operative working process w/ GitHub (Part-1)💑
 comments: true
-category: [github]
-tag: [develop, co-work]
+category: [git,]
+tag: [github, co-work]
 excerpt_separator: <!-- more -->
 ---
 <img src="/images/post_img/20180806-0.png" width="140" align="left" style="padding: 0px 10px 0px 0px;">

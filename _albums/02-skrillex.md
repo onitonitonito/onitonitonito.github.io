@@ -12,7 +12,6 @@ genres: Brostep, Complextro, Fidget House
 works:
   - title: "Scary Monsters and Nice Spirites (2010)"
     composer: "SKrillex"
-
     tracks:
       - title: "Rock n' Roll (Will Take You to the Mountain)"
         duration: "4:44"
