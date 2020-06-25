@@ -14,7 +14,7 @@ permalink: /albums/
 
   <p>[Arist] Performed by ... {{ album.artist }}<br>
     {% if album.director %}
-    [Direct] Directed by ... {{ album.director }}
+      [Direct] Directed by ... {{ album.director }}
     {% endif %}
 
     <ul>
