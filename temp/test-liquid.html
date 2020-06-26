@@ -1,0 +1,122 @@
+---
+layout: default
+permalink: /test-liquid/
+---
+<br><br><br>
+<hr />
+<!-- * TEST ......................................................... -->
+
+{% assign favorite_food = "pizza" %}
+{% assign age = 35 %}
+
+{% capture about_me %}
+I am {{ age }} and my favorite food is {{ favorite_food }}.
+{% endcapture %}
+
+<!-- 03.PRINT PART = THIS IS ONLY A PART OF TO BE SHOWN! -->
+{{ about_me }}
+
+
+
+
+
+
+<br><br><br>
+<hr />
+<!-- * TEST ......................................................... -->
+<!--* PART.01 : MAKING ARRAY PART -->
+  <!-- TAG_LIST -->
+  {% assign tags = "" %}
+  {% assign cats = "" %}
+
+<!-- MAKE CATEGORY ARRAY -->
+  {% for post in site.posts %}
+    {% for cat in post.category %}
+      {% assign cats = cats | append: cat | append: "," %}
+    {% endfor %}
+  {% endfor %}
+
+<!-- MAKE TAG ARRAY -->
+  {% for post in site.posts %}
+    {% for item in post.tag %}
+      {% assign tags =  tags | append: item | append: "," %}
+    {% endfor %}
+  {% endfor %}
+
+
+
+
+
+<!-- THIS IS STRING! -->
+  {{cats}}  <br>
+  {{tags}}  <br>
+
+  <br><br><br>
+<div>STRING: [{{cats.size}} / {{tags.size}}] </div>
+
+
+<!-- THIS IS ARRAY -->
+{{cats}}  <br>
+{{tags}}  <br>
+<br><br><br>
+{% assign cats = cats | split: ","%}
+{% assign tags = tags | split: ","%}
+<div>ARRAY: [{{cats.size}} / {{tags.size}}]</div>
+
+
+
+
+
+
+
+
+<!-- THIS IS UNIQUE   -->
+  {{cats}}  <br>
+  {{tags}}  <br>
+  <br><br><br>
+{% assign cats = cats | uniq %}
+{% assign tags = tags | uniq %}
+<div>UNIQUE: [{{cats.size}} / {{tags.size}}]</div>
+  <!-- {{cats | join: "_"}} -->
+
+  <br>
+  <!-- {{tags | join: "_"}} -->
+
+
+
+<br><br><br>
+<hr />
+<!-- * TEST ......................................................... -->
+<!-- {% assign my_array = "ants, bugs, bees, bugs, ants" | split: "," %} -->
+<!-- {% assign cats = cats | split: ", " %} -->
+<!-- {% assign cats = cats | split: "," %} -->
+{% assign arrs = cats %}
+{{arrs}}
+
+<br><br>
+00.{{ arrs[0] }} <br>
+01.{{ arrs[1] }} <br>
+02.{{ arrs[2] }} <br>
+03.{{ arrs[3] }} <br>
+04.{{ arrs[4] }} <br>
+05.{{ arrs[5] }} <br>
+06.{{ arrs[6] }} <br>
+07.{{ arrs[7] }} <br>
+08.{{ arrs[8] }} <br>
+09.{{ arrs[9] }} <br>
+10.{{ arrs[10] }} <br>
+11.{{ arrs[11] }} <br>
+12.{{ arrs[12] }} <br>
+13.{{ arrs[13] }} <br>
+14.{{ arrs[14] }} <br>
+15.{{ arrs[15] }} <br>
+16.{{ arrs[16] }} <br>
+17.{{ arrs[17] }} <br>
+18.{{ arrs[18] }} <br>
+19.{{ arrs[19] }} <br>
+20.{{ arrs[20] }} <br>
+
+
+
+
+</article>
