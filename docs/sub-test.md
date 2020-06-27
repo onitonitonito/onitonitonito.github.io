@@ -8,7 +8,7 @@ excerpt_separator: <!-- more -->
 <!-- more -->
 # 1.0 site variable - Global
 > 1. site.time = {{site.time}}
-> 1. site.static_files = {.{site.static_files}}
+> 1. site.static_files = {% raw %}{{site.static_files}}{% endraw %}
 <!-- 스테틱화일 데이터 / 주소값 반환 -->
 
 
@@ -30,7 +30,7 @@ site.static_files => [
 
 <br><br>
 <!-- 사이트 콜렉션으로 가져오는 값 = 폴더별 저장된 화일 -->
-# 2.0 site.collections = {.{site.collections}}
+# 2.0 site.collections = {% raw %}{{site.collections}}{% endraw %}
 
 ```ruby
 site.collections => {
@@ -55,27 +55,27 @@ site.collections => {
 
 <br><br>
 # 3.0 config.yml 화일에 정의된 값을 가져온다.
-> 1. site.favicon1 = {{site.favicon1}}
-> 1. site.favicon2 = {{site.favicon2}}
-> 1. site.favicon3 = {{site.favicon3}}
+> 1. site.favicon1 = {% raw %}{{site.favicon1}}{% endraw %}
+> 1. site.favicon2 = {% raw %}{{site.favicon2}}{% endraw %}
+> 1. site.favicon3 = {% raw %}{{site.favicon3}}{% endraw %}
 
 
 
 <br><br>
 # 4.0 태그, 카테고리 문서 HTML 전체를 가져온다.
-> 1. site.categories.python = {.{site.categories.python}}
-> 1. site.tags.game = {.{site.tags.game}}
+> 1. site.categories.python = {% raw %}{{site.categories.python}}{% endraw %}
+> 1. site.tags.game = {% raw %}{{site.tags.game}}{% endraw %}
 
 
 <br><br>
 # 5.0 페이지 레이아웃으로 정의된 문서 HTML 전체를 가져온다
-> 1. site.pages = {.{site.pages}}
-> 1. site.html_pages = {.{site.html_pages}}
+> 1. site.pages = {% raw %}{{site.pages}}{% endraw %}
+> 1. site.html_pages = {% raw %}{{site.html_pages}}{% endraw %}
 
 <br><br>
 # 6.0 데이터 태그..
 
-> 1. site.data = {.{site.data}}
+> 1. site.data = {% raw %}{{site.data}}{% endraw %}
 
 ```ruby
 {
@@ -118,8 +118,8 @@ site.collections => {
 
 <br><br>
 # 7.0 그밖의 태그들..
-> 1. site.html_files = {{site.html_files}} # nothing
-> 1. site.documets = {{site.documets}}     # nothing
+> 1. site.html_files = {% raw %}{{site.html_files}}{% endraw %} # nothing
+> 1. site.documets = {% raw %}{{site.documets}}{% endraw %}     # nothing
 
 
 

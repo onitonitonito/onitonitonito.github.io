@@ -45,25 +45,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: 20px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 16px;
-}
-
-h3 {
-  font-size: 14px;
-}
-
-h4 {
-  font-size: 12px;
-  color: $gray;
-}
+// h1 {
+//   font-size: 20px;
+//   a {
+//     color: inherit;
+//   }
+// }
+//
+// h2 {
+//   font-size: 16px;
+// }
+//
+// h3 {
+//   font-size: 14px;
+// }
+//
+// h4 {
+//   font-size: 12px;
+//   color: $gray;
+// }
 
 p {
   margin: 15px 0;
@@ -382,7 +382,35 @@ footer {
 
 #start-ch {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: normal;
   font-display: fallback;
+}
+
+/************************/
+/*  FOR TAG-LIST        */
+/************************/
+#tag-list {
+  font-size: 0.95em;
+  font-style: bolder;
+  padding: 2px 5px 2px 5px;
+  line-height: 190%;
+  color: #0a316e;
+
+  border-style: solid;
+  border-color: #d100b5;
+  border-width: 3px;
+  border-radius: 22px;
+  background-color: #f7a9ed;
+}
+
+#tag-size {
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: red;
+}
+
+#tag-table {
+   // width='700' align='center' cellpadding='5' border='5'
+   tab-size: 650px;
 }

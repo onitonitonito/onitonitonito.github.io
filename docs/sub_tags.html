@@ -1,0 +1,132 @@
+---
+layout: page
+title: ' '
+permalink: /blog/tags/
+---
+<style>
+  #small-ch {
+    font-size: 0.8em;
+  }
+
+  #big-ch {
+    font-size: 1.1em;
+    font-weight: bolder;
+    line-height: 130%;
+
+    text-align : center;
+    vertical-align: center;
+
+    background-color: #e8b5eb;
+    color: #490a4d;
+  }
+
+  #title-table {
+    background-color: #cf29f1;
+    color: #dff69c;
+    font-weight: bolder;
+    font-size: 1.1em;
+    line-height: 200%;
+  }
+</style>
+
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+  {%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+      {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
+
+
+<!-- TAG LIST -->
+
+<h1>😃TAG LIST</h1>
+
+<div style="margin-left: 40px;">
+<table id="tag-table">
+  <tr>
+    <td>
+      {%- for tag in tags_list -%}
+      &nbsp;<a id="tag-list" href="#{{- tag -}}">
+        <b>&nbsp;{{- tag -}}</b> (<span id="tag-size">{{site.tags[tag].size}}</span>)&nbsp;
+      </a>
+        {% cycle "", "", "<br>" %}
+      {%- endfor -%}
+    </td>
+  </tr>
+</table>
+</div>
+
+<hr>
+
+
+
+
+<!-- TAG TABLE -->
+<h1>😃TAG TABLE</h1>
+
+<div style="margin-left: 50px;">
+  <table id="small-ch" style="padding: 10px;">
+    <tr id="title-table">
+        <th>TAG</th>
+        <th>title</th>
+        <th>tags</th>
+    </tr>
+
+{%- for tag in tags_list -%}
+    <tr>
+              {% assign set_rowspan = site.tags[tag].size | plus: 1 %}
+              {% if site.tags[tag].size > 1 %}
+      <tr>
+        <td id="big-ch" rowspan="{{ set_rowspan }}">
+          <div id="{{- tag -}}">{{- tag -}}</div>
+        </td>
+      </tr>
+
+              {% else if %}
+        <td id="big-ch" rowspan="{{site.tags[tag].size}}">
+          <div id="{{- tag -}}">{{- tag -}}</div>
+        </td>
+              {% endif %}
+
+
+    {%- for post in site.tags[tag] -%}
+    <ol>
+
+{% if site.tags[tag].size > 1 %}
+    <tr>
+          <td>
+            <li>
+              <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+            </li>
+          </td>
+
+          <td>
+            <time datetime="{{- post.date | date_to_xmlschema -}}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          </td>
+    </tr>
+
+
+{% else %}
+          <td>
+            <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+          </td>
+
+          <td>
+            <time datetime="{{- post.date | date_to_xmlschema -}}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          </td>
+{% endif %}
+
+    </ol>
+
+    {%- endfor -%}
+  </tr>
+
+{%- endfor -%}
+
+  </table>
+</div>

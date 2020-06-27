@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Bike Sharing Services Come In Handy 🚲
-category: [shareEconomy,]
-tag: [bike]
+category: [bike]
+tag: [shareEconomy,]
 comments : true
 excerpt_separator: <!-- more -->
 ---

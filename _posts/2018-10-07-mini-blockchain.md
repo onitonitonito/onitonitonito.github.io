@@ -2,8 +2,8 @@
 layout: post
 title: Python mini-blockChain (Transaction,POW,mining)🍪
 comments: true
-category: [blockChain,]
-tag: [Python, criptoCurrency, Flask]
+category: [cryptoCurrency,]
+tag: [Python, Flask, blockChain,]
 excerpt_separator: <!-- more -->
 ---
 <img alt="암호화폐!" width="125" align="left" style="padding: 0px 10px 0px 0px;" src="/images/post_img/20181007-00.png" >

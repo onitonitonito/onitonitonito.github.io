@@ -1,0 +1,151 @@
+---
+layout: default
+permalink: /tags/
+---
+<style>
+  #small-ch {
+    font-size: 0.8em;
+  }
+
+  #big-ch {
+    font-size: 1.1em;
+    font-weight: bolder;
+    line-height: 130%;
+
+    text-align : center;
+    vertical-align: center;
+
+    background-color: #e8b5eb;
+    color: #490a4d;
+  }
+
+  #title-table {
+    background-color: #cf29f1;
+    color: #dff69c;
+    font-weight: bolder;
+    font-size: 1.1em;
+    line-height: 230%;
+  }
+
+  #td-table {
+    background-color: #dff69c;
+    font-weight: bolder;
+    font-size: 1.1em;
+    padding: 0px 100px 0px 20px;
+  }
+
+  #td-table2 {
+    background-color: #e4f5b4;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0px 5px 0px 2px;
+  }
+</style>
+
+<!-- TAG_LIST -->
+{% assign tags = "" %}
+{% assign cats = "" %}
+
+<!-- MAKE CATEGORY ARRAY -->
+{% for post in site.posts %}
+  {% for cat in post.category %}
+    {% assign cats = cats | append: cat | append: "," %}
+  {% endfor %}
+{% endfor %}
+
+<!-- MAKE TAG ARRAY -->
+{% for post in site.posts %}
+  {% for item in post.tag %}
+    {% assign tags = tags | append: item | append: "," %}
+  {% endfor %}
+{% endfor %}
+
+
+<!-- THIS IS STRING! -->
+{% assign cats = cats | split: "," | uniq %}
+{% assign tags = tags | split: "," | uniq %}
+
+
+<h1>😃UNIQUE: [{{cats.size}} / {{tags.size}}]</h1>
+
+<div style="margin-left: 40px;">
+  <table id="small-ch">
+    <tr id="title-table">
+      <th>
+        CATEGORY : [{{cats.size}}]
+      </th>
+      <th>
+        TAGS : [{{tags.size}}]
+      </th>
+    </tr>
+
+    <tr>
+      <td id="td-table">
+          <ol>
+            {% for cat in cats %}
+            <li>{{ cat }}</li>
+            {% endfor %}
+          </ol>
+      </td>
+
+      <td id="td-table">
+        <ol>
+          {% for tag in tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ol>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<hr />
+
+
+<p style="font-size: 1px; color: #fff;">{% increment counter %}</p>
+
+<h1>😃TAGS</h1>
+
+<div style="margin-left: 40px;">
+  <table id="small-ch">
+    <tr id="title-table">
+      <th>&nbsp;no&nbsp;</th>
+      <th>title</th>
+      <th>category</th>
+      <th>tags</th>
+    </tr>
+
+    {% for post in site.posts %}
+    <tr>
+      <td style="text-align: center; background-color: #c5e8f6;">
+        <h1>{% increment counter %}</h1>
+      </td>
+
+      <td style="background-color: #d9f4e4;">
+        <div>{{ post.title }}</div>
+      </td>
+
+
+      <td id="td-table2">
+        <div>{{ post.category }}</div>
+      </td>
+
+
+      <td id="td-table2">
+        <div>
+          <!-- {{ post.tag | split : "   " }} -->
+          <ol>
+            {% for item in post.tag %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </td>
+
+    </tr>
+    {% endfor%}
+
+  </table>
+</div>
+
+<hr />

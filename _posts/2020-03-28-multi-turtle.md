@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Multiple Turtle Movements using QtPy5 UI 🐢
-category: [turtle,]
-tag: [Python, QtPy, GUI]
+category: [GUI,]
+tag: [Python, QtPy, turtle,]
 comments : true
 excerpt_separator: <!-- more -->
 ---

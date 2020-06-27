@@ -3,7 +3,7 @@ layout: post
 title: Non-contact Liquid Level Sensor w/ Raspberry-PI GPIO💦
 comments: true
 category: [raspberryPi,]
-tag: [GPIO, IoT, Sensor]
+tag: [IoT, Sensor]
 excerpt_separator: <!-- more -->
 ---
 <img width="140" align="left" style="padding: 0px 20px 0px 10px;"
