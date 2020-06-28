@@ -81,9 +81,14 @@ permalink: /blog/tags/
     <tr>
               {% assign set_rowspan = site.tags[tag].size | plus: 1 %}
               {% if site.tags[tag].size > 1 %}
+                    {% if site.tags[tag].size == 2 %}
+                      {% assign color-ch = "#0eab00" %}
+                    {% else %}
+                      {% assign color-ch = "#f60000" %}
+                    {% endif %}
       <tr>
         <td id="big-ch" rowspan="{{ set_rowspan }}">
-          <div id="{{- tag -}}">{{- tag -}}</div>
+          <div id="{{- tag -}}"><span style="color: {{color-ch}};">{{- tag -}}</span></div>
         </td>
       </tr>
 
