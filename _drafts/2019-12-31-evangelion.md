@@ -2,8 +2,8 @@
 layout: post
 title: Neo Genesis Evangelion spark😸
 comments: true
-category: [Webscrapping]
-tag: [bs4, beautifulsoup]
+category: [doddle,]
+tag: [spark, evangelion]
 excerpt_separator: <!-- more -->
 ---
 <style>

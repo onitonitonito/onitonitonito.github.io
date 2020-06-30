@@ -1,8 +1,8 @@
 ---
 layout: post
 title: TEST-열받은 데이터센터, 바닷 속에 넣어버린 MS🔥
-category: article
-tag: microsoft
+category: [test,]
+tag: [article, microsoft, markdown]
 excerpt_separator: <!-- more -->
 ---
 <img alt="데이터센터!" width="150" align="left" style="padding: 0px 10px 0px 0px;" src="http://news.microsoft.com/uploads/2016/01/IMG_1298-Assembly.jpg" >

@@ -2,8 +2,8 @@
 layout: post
 title: 스크래치 REMIX로 Go!-Invert Platformer by United07 🎴
 comments: true
-category: [scratch, game]
-tag: [Platformer, United07]
+category: [game, ]
+tag: [scratch, platformer]
 excerpt_separator: <!-- more -->
 ---
 <img alt="스크랫치캣" src="/images/post_img/20180730-00scat.png" width="140" align="left" style="padding: 0px 20px 0px 0px;">

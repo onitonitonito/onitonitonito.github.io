@@ -31,7 +31,7 @@ permalink: /tags/
     background-color: #dff69c;
     font-weight: bolder;
     font-size: 1.1em;
-    padding: 0px 100px 0px 20px;
+    padding: 0px 10px 0px 5px;
   }
 
   #td-table2 {
@@ -65,87 +65,99 @@ permalink: /tags/
 {% assign cats = cats | split: "," | uniq %}
 {% assign tags = tags | split: "," | uniq %}
 
-
-<h1>😃UNIQUE: [{{cats.size}} / {{tags.size}}]</h1>
-
-<div style="margin-left: 40px;">
-  <table id="small-ch">
-    <tr id="title-table">
-      <th>
-        CATEGORY : [{{cats.size}}]
-      </th>
-      <th>
-        TAGS : [{{tags.size}}]
-      </th>
-    </tr>
-
-    <tr>
-      <td id="td-table">
-          <ol>
-            {% for cat in cats %}
-            <li>{{ cat }}</li>
-            {% endfor %}
-          </ol>
-      </td>
-
-      <td id="td-table">
-        <ol>
-          {% for tag in tags %}
-          <li>{{ tag }}</li>
-          {% endfor %}
-        </ol>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<hr />
-
-
 <p style="font-size: 1px; color: #fff;">{% increment counter %}</p>
 
-<h1>😃TAGS</h1>
+<table>
+  <tr>
+    <th>
+      <h1>😃UNIQUE: [{{cats.size}} / {{tags.size}}]</h1>
+    </th>
+    <th>
+      <h1>😃TAGS</h1>
+    </th>
+  </tr>
 
-<div style="margin-left: 40px;">
-  <table id="small-ch">
-    <tr id="title-table">
-      <th>&nbsp;no&nbsp;</th>
-      <th>title</th>
-      <th>category</th>
-      <th>tags</th>
-    </tr>
+  <tr>
+    <td>
+      <div style="margin-left: 5px;">
+        <table id="small-ch">
+          <tr id="title-table">
+            <th>
+              CATEGORY : [{{cats.size}}]
+            </th>
+            <th>
+              TAGS : [{{tags.size}}]
+            </th>
+          </tr>
 
-    {% for post in site.posts %}
-    <tr>
-      <td style="text-align: center; background-color: #c5e8f6;">
-        <h1>{% increment counter %}</h1>
-      </td>
+          <tr>
+            <td id="td-table">
+                <ol>
+                  {% for cat in cats %}
+                  <li>
+                    <a href="#{{- cat -}}">{{- cat -}}</a>
+                  </li>
+                  {% endfor %}
+                </ol>
+            </td>
 
-      <td style="background-color: #d9f4e4;">
-        <div>{{ post.title }}</div>
-      </td>
+            <td id="td-table">
+              <ol>
+                {% for tag in tags %}
+                <li>
+                  <a href="#{{- tag -}}">{{- tag -}}</a>
+                </li>
+                {% endfor %}
+              </ol>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </td>
+    <td>
+      <div style="margin-left: 5px;">
+        <table id="small-ch">
+          <tr id="title-table">
+            <th>&nbsp;no&nbsp;</th>
+            <th>title</th>
+            <th>category</th>
+            <th>tags</th>
+          </tr>
+
+          {% for post in site.posts %}
+          <tr>
+            <td style="text-align: center; background-color: #c5e8f6;">
+              <h1>{% increment counter %}</h1>
+            </td>
+
+            <td style="background-color: #d9f4e4;">
+              <div>
+                <a href="{{post.url}}">{{ post.title }}</a>
+              </div>
+            </td>
 
 
-      <td id="td-table2">
-        <div>{{ post.category }}</div>
-      </td>
+            <td id="td-table2">
+              <div id="{{- post.category -}}">{{ post.category }}</div>
+            </td>
 
 
-      <td id="td-table2">
-        <div>
-          <!-- {{ post.tag | split : "   " }} -->
-          <ol>
-            {% for item in post.tag %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ol>
-        </div>
-      </td>
+            <!-- {{ post.tag | split : "   " }} -->
+            <td id="td-table2">
+                <ol>
+                  {% for item in post.tag %}
+                  <li id="{{- item -}}">{{ item }}</li>
+                  {% endfor %}
+                </ol>
+            </td>
 
-    </tr>
-    {% endfor%}
+          </tr>
+          {% endfor%}
 
-  </table>
-</div>
+        </table>
+      </div>
 
-<hr />
+    </td>
+  </tr>
+</table>
