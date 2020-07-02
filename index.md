@@ -48,4 +48,4 @@ layout: default
   <li> But similar </li>
 </ul>
 
-<img src="{{site.baseurl}}/images/system/markdown_help.png" width="">
+<img width="" style="padding: 0px 0px 0px 50px" src="{{site.baseurl}}/images/system/markdown_help.png">
