@@ -6,9 +6,9 @@ permalink: /about/
 <!-- TITLE IS HERE -->
 
 
+
 <!-- HELLO -->
-'<b style="font-size: 1.8em;">Hello!</b>'
-__I'm Kay__ <a href="https://bit.ly/32WzX4W" target="new">👋</a>
+'<b style="font-size: 1.8em;">Hello!</b>' __I'm Kay__ <a href="https://bit.ly/32WzX4W" target="new">👋</a>
 
 
 <!--* IMAGE : RABBIT IN REAL LIFE -->
@@ -22,9 +22,9 @@ __I'm Kay__ <a href="https://bit.ly/32WzX4W" target="new">👋</a>
 <!--* IMAGE :  STANDING RABBIT -->
 <img width="190" src="{{ site.baseurl}}/images/system/spark_rabbit_00.png" align="right"/>
 
+
 <!-- THERE, are several nicks -->
-'<b style="font-size: 1.8em;">There</b>'
-__are several nicks I've been used in Online.__
+'<b style="font-size: 1.8em;">There</b>' __are several nicks I've been used in Online.__
 
 * One, '__Where is the Carmen in San Diego__', right that '[Carmen Sandiego](https://bit.ly/2WO6OoQ)', has been used for quit a long time from the beginning of my computer-life.
 * Two, '__Kay Suparx__' actually is my real English name, simeply called '__Kay__'.
@@ -39,8 +39,7 @@ __are several nicks I've been used in Online.__
 <br><br>
 
 <!-- My, Gadgets I stick to -->
-'<b style="font-size: 1.8em;">My</b>'
-__Gadgets, I stick to__
+'<b style="font-size: 1.8em;">My</b>'__Gadgets, I stick to__
 
 1. Lenovo [[ThinkPad](https://bit.ly/32Ol2tu)] Notebook PC, actually It was from an LG-IBM ThinkPad.
 1. Logitech Mouse G-Series. ... [[G700s](https://bit.ly/30Gc4Md)], now [[G903](https://bit.ly/3jCTtcs)]
@@ -48,10 +47,6 @@ __Gadgets, I stick to__
 
   > * acctually ThinkPad has similar touches and rebounce, which were obviously splitted into like-group and dislike-group. ~~come to think of it, most key-boards are like that, nothing particular.~~
 
-<!--* IMAGE :  MY GADGETS -->
-<!--
-<img width="550"  style="padding: 0px 30px 0px 10px;"
-src="{{ site.baseurl}}/images/docs_img/my_gadgets.png"/> -->
 
 <!--* IMAGE :  MY GADGETS -->
 <img width="550" style="padding: 0px 0px 0px 50px;"
