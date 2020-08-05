@@ -9,7 +9,7 @@ excerpt_separator: <!-- more -->
 
 <img width="150" align="left" src="/images/post_img/20190217-00.png" style="padding: 0px 15px 0px 0px;">
 
-'<span id="head">The</span>' harsh winter cold begins to fade, and when spring comes, ultrafine dust slowly begins to increase with the monsoon blowing from China. Ultrafine dust has now become our daily seasonal phenomenon with yellow dust in the spring. So, we need to batten the hatch more than the past.
+'<span id="head">The</span>' harsh winter cold begins to fade, and when spring comes, ultrafine dust slowly begins to increase with the monsoon blowing from China. Ultrafine dust has now become our daily seasonal phenomenon with yellow dust in the spring. So, we need to batten down the hatch more than ever.
 <!-- more -->
 
 <style>
@@ -55,7 +55,7 @@ the monsoon changes its direction by season. as the below chart shows, the conce
 <img width='800' src="/images/post_img/20190217-041.png">
 
 <!-- 미세먼지 발생량과 밀접한 상관 관계가 있는 4가지 화학적 결합물, SO2, NO2, O3, CO를 포함해서 우리가 최종적으로 변화량을 알고자 하는 2가지 발생물, PM2.5 와 PM10, 대하여 상관관계를 살펴보면 각 성분간의 상관 관계가 매우 명백하게 나타나는 관계를 가지고 있는것을 확인할 수 있습니다. -->
-'<span id="head">If</span>' we look at the mutual correlation of the four chemical compounds that are closely related to the amount of fine dust and the two products that we want to know the final change, we can see that the proportional or inverse relationship between each component is very obvious.
+'<span id="head">If</span>' we look at the mutual correlation of the four chemical compounds - SO2, NO2, O3, CO - that are closely related to the amount of the two products - PM2.5 and PM10, which are targets for wanting to know - that we want to know the final change. we can see that the proportional or inverse relationship between each component is very obvious.
 
 
 <!-- 특히 눈에 도드라지는 점은 O3 는 모든 인자에 대하여 확고하고 뚜렷한 반비례 관계를 보이는 것을 알수 있습니다. O3을 제외한 다른 인자들은 그 정도의 차이는 있지만 일반적으로 강하거나 약한 비례관계에 있는것이 눈에 띄입니다. 이런 상관관계가 왜 공기품질을 측정하는데 4+2의 화학적 결합물을 대상으로 했는지를 이해할 수 있는 부분입니다. -->
@@ -81,7 +81,7 @@ We believe that this can detect signs before a trend occurs. In other words, it 
 
 
 <!-- 만약 그렇게 할 수 있다면, 1시간 마다 제공되는 6가지 인자 데이터 값을 기반으로 1개의 의미가 압축된 바코드와 같은 시각적인 도구를 만들어 낼 수 있을것 입니다. 그리고 1시간 단위로 생성되는 이 바코드를 나열 하는 것으로 미세먼지 발생 변화량을 사전에 감지 할 수 있는 바로미터가 될 것으로 기대하고 있습니다. -->
-If It can do that, you will be able to create a visual tool system such as a barcode which has compressed idea based on the six factors data values ​​provided every hour. And by listing this barcode generated in 1-hour increments, we expect that it can be used as a barometer can detect the changes in fine dust concentration in advance.
+'<span id="head">If</span> It can do that, you will be able to create a visual tool system such as a barcode which has compressed idea based on the six factors data values ​​provided every hour. And by listing this barcode generated in 1-hour increments, we expect that it can be used as a barometer can detect the changes in fine dust concentration in advance.
 
 <!-- 제가 상상하는 서비스는 이것을 기반으로 편의를 제공 하고자 합니다. -->
 The service I imagine is intended to provide convenience based on this.
@@ -92,18 +92,28 @@ In addition, if it can accumulate the amount of change so far as a form of a tim
 <!-- WANNABE SERVICE LIKE THIS -->
 <img width='700' src="/images/post_img/20190217-10.png">
 
+
+
+
+<br><br>
 <!-- 요약하자면 구현하고자 하는 서비스는 아래와 같습니다 -->
-In a nutshell, there are three things I want to make it a service are below.
+'<span id="head">In a nutshell</span>, there are three things I want to make it a service are below.
 
-<!-- >  1. 첫 째는 복잡한 변화를 한눈에 감지할 수있는 시각적 코드 시스템
->  1. 두번 째는 과거의 축적 된 이력 데이터를 보여 줄 것
->  1. 세번 째는 앞으로 발생할 경향을 예측하여 예보를 해 줄 것 -->
-1. The first is a simple visual code system that can explain complicated environmental changes at a glance
-1. The second is that as a form of the chart it will show the accumulated record of the past
-1. Third, forecast the future in a certain time-span upcoming, like 12hours, 24hours.
+ > 1. __The first is a simple visual code system that can explain complicated environmental changes at a glance.__
+ > 1. __The second is that as a form of the chart it will show the accumulated record of the past.__
+ > 1. __Third, forecast the future in a certain time-span upcoming, like 12hours, 24hours.__
 
+ <!-- 1. 첫 째는 복잡한 변화를 한눈에 감지할 수있는 시각적 코드 시스템 -->
+ <!-- 1. 두번 째는 과거의 축적 된 이력 데이터를 보여 줄 것 -->
+ <!-- 1. 세번 째는 앞으로 발생할 경향을 예측하여 예보를 해 줄 것 -->
+
+
+
+
+
+<br><br>
 <!-- * 시각적 QR코드 시스템은 안정적인 상태가 얼마나 지속되고 있는지, 변화의 조짐이 시작되는지의 정보를 시각적으로 간편하게 제공한다 - 예: 맑은 공기가 안정적인 상태가 3일째 지속되고 있었는데, 갑작스럽게 나빠지기 시작했다 -->
-The visual QR code system provides visually easy information on how long the steady-state is continuing and the signs of change begin - example: the clean air was stable for the third day, but suddenly it started to deteriorate.
+* The visual QR code system provides visually easy information on how long the steady-state is continuing and the signs of change begin - example: the clean air was stable for the third day, but suddenly it started to deteriorate.
 
 <!-- * 과거의 축적된 이력데이터 챠트는 그것과 연관지어 사용자 마다 연관된 스토리를 만들어 낼 수 있다. (소셜미디어, 블로그 등) - 예: 내가 피크닉을 갔던 어제는 올해 들어 가장 깨끗한 날씨였다 -->
 * The data chart that has been accumulated from the past can be used as a subject to create a story associated with each individual. (Social media, blogs, etc.)-Example: Yesterday when I went on a picnic, was the cleanest weather this year.
@@ -113,7 +123,7 @@ The visual QR code system provides visually easy information on how long the ste
 * The fine dust forecasting system can help to schedule outdoor activities. -  Example: I want to plan a tennis meeting tomorrow afternoon, but will fine dust get better?
 
 <!-- 아래 보여주는 챠트는 실제로, 올해 1월 1일 부터 500 시간(약 21일)동안 송도지역의 미세먼지 변동량을 한시간 단위로 저장한 데이터 이며, 상단 예측 그래프는 가장 간단한 ARIMA Model 을 사용하여 예측 샘플을 작성 하였습니다. 물론, 단순히 ARIMA MODEL 만으로 간단히 해결 되는 문제는 아닙니다. -->
-The chart shown below is data that stores the amount of fine dust fluctuations in the Songdo area in one-hour increments for 500 hours (about 21 days) from January 1 of this year, and the 24-hours prediction graph at the top of it is made using 'ARIMA Model'. Of course, it is not that simple problem that can be solved by one simple prediction model like 'ARIMA'.
+<span id="head">The</span> chart shown below is data that stores the amount of fine dust fluctuations in the Songdo area in one-hour increments for 500 hours (about 21 days) from January 1 of this year, and the 24-hours prediction graph at the top of it is made using 'ARIMA Model'. Of course, it is not that simple problem that can be solved by one simple prediction model like 'ARIMA'.
 
 
 
@@ -144,3 +154,9 @@ The chart shown below is data that stores the amount of fine dust fluctuations i
 
 <!-- PM2.5 & PM10 -2 -->
 <!-- <img width='700' src="/images/post_img/20190217-09-2.png"> -->
+
+<br><br><br>
+
+<div style="margin-left: 150px; margin-right: 150px; color: #f985f4; font-weight: bolder; font-size: 1.4em;">
+<span id="head">If</span> you want a further discussion about this, please leave a comment below.
+</div>
