@@ -2,6 +2,12 @@
 layout: null
 ---
 
+img {
+  border-style: dashed;
+  border-color: #6f0ccd;
+  border-radius: 50 px;
+}
+
 @import url("pygment_highlights.css");
 
 /* --- General --- */
