@@ -128,34 +128,16 @@ In addition, if it can accumulate the amount of change so far as a form of a tim
 
 
 
-
-<!-- CONCENTRATION IN DISASTER DEGREE -->
-<!-- <img width='500' src="/images/post_img/20190217-042.png"> -->
-
-
-
-
-<!-- PREDICTION 24HOURS-1 -->
-<!-- <img width='400' src="/images/post_img/20190217-05-1.png"> -->
-
+<!-- PM2.5 & PM10 -2 -->
+<img width='700' src="/images/post_img/20190217-09-2.png">
 
 <!-- PREDICTION 24HOURS-2 -->
-<img width='400' src="/images/post_img/20190217-05-2.png">
-
-<!-- PREDICTION 24HOURS-3 -->
-<!-- <img width='400' src="/images/post_img/20190217-05-3.png"> -->
+<img width='500' src="/images/post_img/20190217-05-2.png">
 
 
-
-
-
-<!-- PM2.5 & PM10 -1 -->
-<!-- <img width='700' src="/images/post_img/20190217-09-1.png"> -->
-
-<!-- PM2.5 & PM10 -2 -->
-<!-- <img width='700' src="/images/post_img/20190217-09-2.png"> -->
-
-<br><br><br>
+<br>
+<br>
+<br>
 
 <div style="margin-left: 150px; margin-right: 150px; color: #f985f4; font-weight: bolder; font-size: 1.4em;">
 <span id="head">If</span> you want a further discussion about this, please leave a comment below.
